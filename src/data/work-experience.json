@@ -1,0 +1,33 @@
+{
+  "data": [
+    {
+      "title": "Founder/Owner, Lead Instructor",
+      "company": "Ride Skills",
+      "employmentDates": {
+        "start": "2023-10-01T04:00:00.000Z",
+        "end": null
+      },
+      "type": "self-employed",
+      "location": "Charlotte, NC",
+      "skills": ["TypeScript", "React", "Next.js"],
+      "description": "I have decided to take on the challenge of starting and running my own mountain bike instruction and coaching company. This allows me to share my love of mountain biking with others and while helping people gain the skills to ride safely and confidently!/n/nThis venture is giving me the chance to combine two of my passions, mountain biking & web development. Mountain biking has always been my top hobby for 19 years from riding for fun to competing at the international level. Now as an instructor I get to pass on my passion for the sport & help others reach their goals in riding. I also get a chance to capitalize on my 19 years of experience in web design and software development to build out and maintain my company website. I created the logo and branding that will represent the Ride Skill mission and beliefs for years to come.\n\nResponsibilities:/n- skills coach and instructor/n- business administration/n- logo and branding design\n- website design\n- website development and maintenance"
+    },
+    {
+      "title": "React Web Technical Interviewer",
+      "company": "G2i",
+      "employmentDates": {
+        "start": "2022-10-01T04:00:00.000Z",
+        "end": null
+      },
+      "type": "contract",
+      "location": "remote",
+      "skills": [
+        "JavaScript",
+        "React",
+        "Software Engineering",
+        "Web Development"
+      ],
+      "description": "As a React Web Technical Interviewer for G2i I work as part of the vetting team to learn and verify the amount of knowledge and expertise candidates have with developing software and web sites with React and JavaScript./n/nI like to treat each interview more like a conversation between two developers where we are trying to solve an assortment of problems and discuss some theory around software development. Meanwhile I am trying to gain an understanding of what knowledge the candidate possesses and where they are strong and what their weak points are./n/nI then strive to provide valuable feedback that will help the candidate not only strengthen their knowledge but also grow as a developer."
+    }
+  ]
+}

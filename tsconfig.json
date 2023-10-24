@@ -9,6 +9,7 @@
       "vite/client"
     ],
     "jsx": "react-jsx",
-    "jsxImportSource": "react"
+    "jsxImportSource": "react",
+    "allowSyntheticDefaultImports":true
   }
 }

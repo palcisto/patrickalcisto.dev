@@ -9,15 +9,17 @@
     "preview": "astro preview"
   },
   "devDependencies": {
+    "@types/luxon": "^3.3.3",
+    "@types/react": "^18.2.31",
+    "@types/react-dom": "^18.2.14",
     "astro": "^3.3.2",
     "prettier-plugin-astro": "^0.12.0",
     "typescript": "^5.2.2"
   },
   "dependencies": {
     "@astrojs/react": "^3.0.3",
-    "@types/react": "^18.2.31",
-    "@types/react-dom": "^18.2.14",
     "cypress": "^10.0.3",
+    "luxon": "^3.4.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
