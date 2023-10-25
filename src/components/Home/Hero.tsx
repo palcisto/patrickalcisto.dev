@@ -10,6 +10,7 @@ export default function Hero(props: HeroProps) {
         Passionate about crafting excellent user experiences on the web and
         mobile.
       </h2>
+      <a href="#">Hire me</a>
       <img src="" alt="hero image" />
     </section>
   );
