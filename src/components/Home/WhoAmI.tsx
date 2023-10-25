@@ -5,7 +5,7 @@ export interface WhoAmIProps {}
 export default function WhoAmI(props: WhoAmIProps) {
   return (
     <section id="who-am-i">
-      <h3>WHo Am I?</h3>
+      <h3>Who Am I?</h3>
       <p>
         Experienced UI developer with rare attention to detail and focus who
         prides himself on creating optimized, standards- compliant web
