@@ -3,6 +3,7 @@ import WhoAmI from './WhoAmI';
 import Hero from './Hero';
 import Skills from './Skills';
 import Experience from './Experience';
+import Contact from './Contact';
 
 export interface HomeProps {
   prop?: string;
@@ -11,7 +12,7 @@ export interface HomeProps {
 export function Home({ prop = 'default value' }: HomeProps) {
   return (
     <>
-      <header>
+      <header className="">
         <div id="branding">
           <img src="" alt="PA" />
           <span>Patrick A. Alcisto</span>
@@ -56,22 +57,7 @@ export function Home({ prop = 'default value' }: HomeProps) {
         <WhoAmI />
         <Skills />
         <Experience />
-        <section id="contact">
-          <dl>
-            <dt>Email</dt>
-            <dd>
-              <a href="mailto:patrickalcisto@gmail.com">
-                patrickalcisto@gmail.com
-              </a>
-            </dd>
-          </dl>
-          <dl>
-            <dt>Phone</dt>
-            <dd>
-              <a href="tel:+16193487906">+1 (619) 348-7906</a>
-            </dd>
-          </dl>
-        </section>
+        <Contact />
       </main>
     </>
   );

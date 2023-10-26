@@ -1,46 +1,51 @@
 ---
-import '../style/demo-styling.css'
+import '../style/demo-styling.css';
 
 export interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props as Props;
-const currentYear = new Date(Date.now()).getFullYear()
+const currentYear = new Date(Date.now()).getFullYear();
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-  <meta name="author" content="Patrick A. Alcisto">
-  <meta name="description" content="Senior UI Developer passionate about crafting excellent user experiences on the web and mobile.">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-	<title>{title}</title>
-</head>
-<body>
-	<slot />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="author" content="Patrick A. Alcisto" />
+    <meta
+      name="description"
+      content="Senior UI Developer passionate about crafting excellent user experiences on the web and mobile."
+    />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
 
-  <footer>
-    <p>&copy;{currentYear} Patrick A. Alcisto</p>
-  </footer>
-</body>
+    <footer>
+      <p>&copy;{currentYear} Patrick A. Alcisto</p>
+    </footer>
+  </body>
 </html>
 
 <style>
   :root {
     --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
-		--font-size-lg: clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem); 
+    --font-size-lg: clamp(1.2rem, 0.7vw + 1.2rem, 1.5rem);
     --font-size-xl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
     --color-text: hsl(12, 5%, 4%);
-    --color-bg: hsl(10, 21%, 95%);
   }
   html {
-    font-family: system-ui, sans-serif;
     font-size: var(--font-size-base);
-    color: var(--color-text);
-    background-color: var(--color-bg);
   }
   body {
     margin: 0;
@@ -52,7 +57,14 @@ const currentYear = new Date(Date.now()).getFullYear()
     font-size: var(--font-size-lg);
   }
   :global(code) {
-    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
+    font-family:
+      Menlo,
+      Monaco,
+      Lucida Console,
+      Liberation Mono,
+      DejaVu Sans Mono,
+      Bitstream Vera Sans Mono,
+      Courier New,
+      monospace;
   }
 </style>
