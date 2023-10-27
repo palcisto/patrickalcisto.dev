@@ -1,5 +1,4 @@
 ---
-import '../style/styles.css';
 import GithubIcon from '../components/icons/Github.astro';
 import CautionIcon from '../components/icons/Caution.astro';
 
@@ -33,13 +32,15 @@ const currentYear = new Date(Date.now()).getFullYear();
   <body>
     <div class="caution">
       <p>
-        <CautionIcon classes="caution-icon" />This site is in active development. Please don't mind the
-        mess as I sort everything out. Meanwhile, you can checkout the code on&nbsp;<a
+        <CautionIcon classes="caution-icon" />This site is in active
+        development. Please don't mind the mess as I sort everything out.
+        Meanwhile, you can checkout the code on&nbsp;<a
           class="github-link"
           href="https://github.com/palcisto/patrickalcisto.dev"
           ><span>
-            <GithubIcon classes='octocat-icon' />
-          </span>GitHub</a>!
+            <GithubIcon classes="octocat-icon" />
+          </span>GitHub</a
+        >!
       </p>
     </div>
     <slot />
@@ -218,13 +219,17 @@ const currentYear = new Date(Date.now()).getFullYear();
 
   .caution-icon {
     display: inline-block;
-    margin-right: 12px;
+    margin-right: 24px;
     height: 32px;
     width: 32px;
   }
 
   .github-link {
     color: var(--eerie-black);
+    display: inline-flex;
+    align-items: center;
+    margin-left: 4px;
+    text-decoration: underline;
 
     &:hover {
       color: var(--accent-color);
@@ -234,5 +239,18 @@ const currentYear = new Date(Date.now()).getFullYear();
       display: inline-block;
       margin-right: 4px;
     }
+  }
+
+  footer {
+    background-color: var(--eerie-black);
+    height: 500px;
+    margin: 0 auto;
+    padding-top: 50px;
+    width: 100%;
+    text-align: center;
+  }
+
+  footer img {
+    width: 20px;
   }
 </style>
