@@ -1,40 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
-
-:root {
-  --main-family: 'Roboto', sans-serif;
-  --accent-family: 'Orbitron', sans-serif;
-  --color-bg: linear-gradient(180deg, #ffffff 0%, #aec6dc 100%);
-  --primary-color: 20 100% 50%;
-  --accent-color: 0 0% 50%;
-
-  /* CSS HSL */
-  --orange-pantone: hsl(20, 100%, 50%, 1);
-  --lavender-blush: hsl(0, 68%, 96%, 1);
-  --brilliant-rose: hsl(328, 93%, 63%, 1);
-  --eerie-black: hsl(180, 18%, 11%, 1);
-  --dark-purple: hsl(290, 43%, 18%, 1);
-
-  --border-radius: 3px;
-}
-
-:root.theme-dark {
-  --color-background: 251 29% 11%;
-  --color-background: 0 0% 100%;
-}
-
-html {
-  background-color: var(--dark-purple);
-  font-family: var(--main-family);
-  min-height: 100%;
-  box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-
 #background {
   display: none;
   position: fixed;
@@ -70,9 +33,9 @@ header {
 }
 
 #branding span {
-  color: hsl(var(--primary-color) / 1);
+  color: var(--primary-color);
   font-family: var(--accent-family);
-  font-size: 24px;
+  font-size: 28px;
   text-shadow: 2px 2px 3px 4px var(--eerie-black);
 }
 
@@ -92,20 +55,13 @@ header > nav {
 
 #hero {
   display: flex;
-  /* flex-direction: column; */
-  /* justify-content: center; */
   gap: 5vw;
   padding: 28vh 5vw 0;
   height: 100vh;
   width: 100%;
-  /* box-shadow: inset 0 0 0px 1px pink; */
-  /*   padding-left: 10vw; */
-  /*   padding-top: 17vh; */
-  /* justify-content: start; */
 }
 
 #hero h1 {
-  color: hsl(var(--primary-color) / 1);
   font-family: var(--accent-family);
   font-size: 64px;
   margin-bottom: 20px;

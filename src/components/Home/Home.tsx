@@ -12,9 +12,9 @@ export interface HomeProps {
 export function Home({ prop = 'default value' }: HomeProps) {
   return (
     <>
-      <header className="">
+      <header>
         <div id="branding">
-          <img src="" alt="PA" />
+          <img src="" alt="PA" style={{ display: 'none' }} />
           <span>Patrick A. Alcisto</span>
         </div>
 
