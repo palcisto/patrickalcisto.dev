@@ -4,6 +4,6 @@ describe('empty spec', () => {
   });
 
   it('displays the hero title text', () => {
-    cy.get('h1').contains('Senior UI, UX & Frontend Developer');
+    cy.get('h1').contains('Senior Frontend Developer');
   });
 });
