@@ -8,6 +8,12 @@ export default {
         accent: 'hsl(var(--accent-color-base) / <alpha-value>)',
         text: 'hsl(var(--text-color-base) / <alpha-value>)',
         title: 'hsl(var(--title-color-base) / <alpha-value>)',
+        'eerie-black': 'hsl(var(--eerie-black-base) / <alpha-value>)',
+        'dark-purple': 'hsl(var(--dark-purple-base) / <alpha-value>)',
+      },
+      fontFamily: {
+        title: '"Orbitron", sans-serif',
+        body: '"Roboto", sans-serif',
       },
     },
   },
