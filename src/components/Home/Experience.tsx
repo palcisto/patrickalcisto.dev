@@ -13,7 +13,7 @@ export interface ExperienceProps {}
 export default function Experience(props: ExperienceProps) {
   return (
     <section id="experience">
-      <h3>Experience</h3>
+      <h2>Experience</h2>
       {workExperience.map((work, i) => (
         <Work key={i} {...work} />
       ))}

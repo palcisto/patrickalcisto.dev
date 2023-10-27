@@ -5,7 +5,7 @@ export interface InterestsProps {}
 export default function Interests(props: InterestsProps) {
   return (
     <section>
-      <h3>Interests</h3>
+      <h2>Interests</h2>
       <ul>
         <li>Spending time w/ my girlfriend and dogs</li>
         <li>Mountain biking</li>

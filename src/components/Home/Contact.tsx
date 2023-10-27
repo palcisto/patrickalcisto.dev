@@ -5,6 +5,7 @@ export interface ContactProps {}
 export default function Contact(props: ContactProps) {
   return (
     <section id="contact">
+      <h2>Get in touch!</h2>
       <dl>
         <dt>Email</dt>
         <dd>
