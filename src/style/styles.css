@@ -73,6 +73,8 @@ header > nav {
 
 #hero {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 5vw;
   padding: 28vh 5vw 0;
   height: 100vh;
@@ -161,6 +163,7 @@ header > nav {
 }
 
 .hero__image {
+  display: none;
   position: relative;
   bottom: 0;
   width: 60vw;
