@@ -40,17 +40,17 @@ export const Work = (props: WorkProps) => {
       ? formatWorkDate(props.employmentDates.end)
       : 'present';
   return (
-    <article>
-      <h4>{props.title}</h4>
-      <h5>
+    <article className="mb-16">
+      <h4 className="text-primary">{props.title}</h4>
+      <h5 className="text-accent">
         {props.company} | {props.type}
       </h5>
-      <div>
+      <div className="text-accent">
         <time dateTime="">{formatWorkDate(props.employmentDates.start)}</time>
         &nbsp;-&nbsp;
         <time dateTime="">{endDate}</time>
       </div>
-      <div>{props.location}</div>
+      <div className="text-accent">{props.location}</div>
       <ul>
         {props.skills.map((skill) => (
           <li key={skill}>{skill}</li>
