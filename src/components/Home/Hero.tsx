@@ -12,14 +12,14 @@ export default function Hero(props: HeroProps) {
   return (
     <section id="hero">
       <div>
-        <h1>
+        <h1 className="text-center md:text-left">
           Senior <span>Frontend</span> Developer
         </h1>
         <h2>
           Passionate about crafting excellent user experiences on the web and
           mobile
         </h2>
-        <a href="#" className="cta">
+        <a href="#" className="cta uppercase tracking-wide font-normal">
           <span className="cta__inner">Hire me</span>
         </a>
       </div>
