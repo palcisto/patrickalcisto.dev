@@ -18,7 +18,10 @@ export default function Hero(props: HeroProps) {
         Passionate about crafting excellent user experiences on the web and
         mobile
       </h2>
-      <a href="#" className="cta uppercase tracking-wide font-normal">
+      <a
+        href="https://portal.g2i.co/developer/Patrick-Alcisto/22c9f395-29f8-4820-b737-1e83dfce07a0"
+        className="cta uppercase tracking-wide font-normal"
+      >
         <span className="cta__inner">Hire me</span>
       </a>
       <img className="hero__image" src="" alt="hero image" />

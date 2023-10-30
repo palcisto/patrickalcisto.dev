@@ -52,7 +52,7 @@ export default function Header() {
           </span>
         </div>
         <a
-          href="#"
+          href="https://portal.g2i.co/developer/Patrick-Alcisto/22c9f395-29f8-4820-b737-1e83dfce07a0"
           className="work-status__cta group/hireMe p-4 leading-none rounded-r-lg transition-[background-position] duration-300 ease-in-out"
         >
           <span className="text-primary group-hover/hireMe:text-dark-purple  uppercase tracking-wide font-normal transition duration-300 ease-in-out">
