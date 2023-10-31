@@ -12,8 +12,10 @@ export interface ExperienceProps {}
 
 export default function Experience(props: ExperienceProps) {
   return (
-    <section id="experience">
-      <h2>Experience</h2>
+    <section id="experience" className="flex flex-col items-center">
+      <h2 className="text-lg md:text-4xl font-title mb-12 drop-shadow-titles">
+        Experience
+      </h2>
       {workExperience.map((work, i) => (
         <Work key={i} {...work} />
       ))}

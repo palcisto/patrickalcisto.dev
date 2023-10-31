@@ -6,13 +6,17 @@ import Skills from './Skills';
 import Experience from './Experience';
 import Contact from './Contact';
 
-export function Home() {
+export interface HomeProps {
+  profilePhoto: string;
+}
+
+export function Home(props: HomeProps) {
   return (
     <>
       <Header />
       <main>
         <Hero />
-        <WhoAmI />
+        <WhoAmI profilePhoto={props.profilePhoto} />
         <Skills />
         <Experience />
         <Contact />

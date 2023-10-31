@@ -4,8 +4,16 @@ import NodeIcon from '../icons/Node';
 import JavascriptIcon from '../icons/Javascript';
 import TypeScriptIcon from '../icons/TypeScriptIcon';
 import GraphQLIcon from '../icons/GraphQLIcon';
+import { sortSkills } from '../../lib/utils';
 
-const skills = [
+export type Skill = {
+  skill: string;
+  years: number;
+  category: 'technical' | 'soft';
+  icon: React.FC;
+};
+
+const skills: Skill[] = [
   {
     skill: 'React',
     years: 8,
@@ -85,7 +93,7 @@ const skills = [
     icon: () => null,
   },
   {
-    skill: 'Responsive Design',
+    skill: 'Responsive',
     years: 10,
     category: 'soft',
     icon: () => null,
@@ -102,11 +110,16 @@ export interface SkillsProps {}
 
 export default function Skills(props: SkillsProps) {
   return (
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        {skills.map(({ skill, icon: Icon }) => (
-          <li key={skill} className="flex gap-2 items-center">
+    <section id="skills" className="flex flex-col items-center mb-48">
+      <h2 className="text-lg md:text-4xl font-title mb-12 drop-shadow-titles">
+        Tools
+      </h2>
+      <ul className="flex flex-wrap justify-center gap-4 w-1/2 rounded-tr-2xl rounded-bl-2xl p-8 border border-accent text-eerie-black shadow-current shadow-inner">
+        {skills.sort(sortSkills).map(({ skill, icon: Icon }) => (
+          <li
+            key={skill}
+            className="flex gap-2 items-center rounded-md bg-eerie-black py-2 px-3 text-accent"
+          >
             <Icon /> {skill}
           </li>
         ))}

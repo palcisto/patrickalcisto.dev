@@ -13,9 +13,27 @@ export default function Header() {
 
       <div id="social">
         <ul>
-          <li>LinkedIn</li>
-          <li>Github</li>
-          <li>G2i</li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/patrickalcisto/"
+              className="text-accent"
+            >
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/palcisto" className="text-accent">
+              Github
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://portal.g2i.co/developer/Patrick-Alcisto/22c9f395-29f8-4820-b737-1e83dfce07a0"
+              className="text-accent"
+            >
+              G2i
+            </a>
+          </li>
         </ul>
       </div>
 

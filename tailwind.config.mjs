@@ -15,6 +15,9 @@ export default {
         title: '"Orbitron", sans-serif',
         body: '"Roboto", sans-serif',
       },
+      dropShadow: {
+        titles: '2px 2px 6px var(--accent-color)',
+      },
     },
   },
   plugins: [],
