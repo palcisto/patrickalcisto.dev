@@ -10,7 +10,7 @@ export interface HeroProps {}
 
 export default function Hero(props: HeroProps) {
   return (
-    <section id="hero">
+    <section id="hero" className="min-h-screen">
       <h1 className="text-center md:text-left">
         Senior <span>Frontend</span> Developer
       </h1>

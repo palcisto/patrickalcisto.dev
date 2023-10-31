@@ -6,9 +6,12 @@ export interface WhoAmIProps {
 
 export default function WhoAmI(props: WhoAmIProps) {
   return (
-    <section id="who-am-i" className="flex flex-row gap-24 mb-48 px-56">
-      <div className=" text-right">
-        <h2 className="text-lg md:text-4xl font-title mb-12 drop-shadow-titles">
+    <section
+      id="who-am-i"
+      className="flex flex-col md:flex-row gap-24 mb-48 px-8 md:px-56"
+    >
+      <div className="text-center md:text-right">
+        <h2 className="text-3xl md:text-4xl font-title mb-12 drop-shadow-titles">
           Who Am I?
         </h2>
         <p className="text-lg font-light">

@@ -110,11 +110,14 @@ export interface SkillsProps {}
 
 export default function Skills(props: SkillsProps) {
   return (
-    <section id="skills" className="flex flex-col items-center mb-48">
+    <section
+      id="skills"
+      className="flex flex-col items-center mb-48 p-8 md:p-0"
+    >
       <h2 className="text-lg md:text-4xl font-title mb-12 drop-shadow-titles">
         Tools
       </h2>
-      <ul className="flex flex-wrap justify-center gap-4 w-1/2 rounded-tr-2xl rounded-bl-2xl p-8 border border-accent text-eerie-black shadow-current shadow-inner">
+      <ul className="flex flex-wrap justify-center gap-4 w-full md:w-1/2 rounded-tr-2xl rounded-bl-2xl p-8 border border-accent text-eerie-black shadow-current shadow-inner">
         {skills.sort(sortSkills).map(({ skill, icon: Icon }) => (
           <li
             key={skill}
