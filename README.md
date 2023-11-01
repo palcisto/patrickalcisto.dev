@@ -13,6 +13,18 @@ If you're still reading this, then I appreciate your patience and interest in wh
 Cheers,
 Patrick
 
+## New (or Older) Things I'm trying
+
+Here's a list of a few things I'm trying out:
+
+- Astro
+- Netlify
+- Responsive design w/ Tailwindscss
+- Improving/sharpening my design skills
+  <br /><br />
+
+---
+
 [![Netlify + Astro](https://user-images.githubusercontent.com/43764894/223559085-8ff69d2f-4247-427f-a3a6-d2036b00082a.png)](https://ntl.fyi/3LZGn73)
 
 # Astro Quickstart Template
