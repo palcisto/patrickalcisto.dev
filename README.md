@@ -2,7 +2,7 @@
 
 If you're reading this, first off I want to thank you for taking the time to check out my repo. I'm currently in the process of designing and building my developer portfolio site for which this is the code repository.
 
-I have opted to design in browser, since I don't have much experience designing in a tool like Figma.
+I have opted to design in browser, since I don't have much experience designing in a tool like Figma. Also, while I may have started my career as a web designer, I haven't truly designed much in the past decade as I focused primarily on UI/UX development.
 
 Therefore, much of what you'll see on the live URL at [patrickalcisto.dev](https://patrickalcisto.dev) is a part of my design process and may not look the same the next time you visit the site. I am taking advantage of this time to learn new tools and techniques to improve my skills and while reinforcing my existing knowledge and skillset.
 
