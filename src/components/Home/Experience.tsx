@@ -12,7 +12,7 @@ export interface ExperienceProps {}
 
 export default function Experience(props: ExperienceProps) {
   return (
-    <section id="experience" className="flex flex-col items-center">
+    <section id="experience" className="grid grid-cols-2 gap-12">
       <h2 className="text-lg md:text-4xl font-title mb-12 drop-shadow-titles">
         Experience
       </h2>
@@ -22,6 +22,16 @@ export default function Experience(props: ExperienceProps) {
     </section>
   );
 }
+
+type PillProps = {
+  children: React.ReactNode;
+};
+
+const Pill = (props: PillProps) => (
+  <span className="p-2 text-sm rounded-md bg-eerie-black text-primary">
+    {props.children}
+  </span>
+);
 
 type WorkProps = {
   title: string;
@@ -42,8 +52,8 @@ export const Work = (props: WorkProps) => {
       ? formatWorkDate(props.employmentDates.end)
       : 'present';
   return (
-    <article className="mb-16">
-      <h4 className="text-primary">{props.title}</h4>
+    <article className="mb-16 work p-8 rounded-tr-xl rounded-bl-xl border border-accent border-solid">
+      <h4 className="text-2xl text-primary mb-4">{props.title}</h4>
       <h5 className="text-accent">
         {props.company} | {props.type}
       </h5>
@@ -53,12 +63,14 @@ export const Work = (props: WorkProps) => {
         <time dateTime="">{endDate}</time>
       </div>
       <div className="text-accent">{props.location}</div>
-      <ul>
+      <p className="m-0 mb-8 p-0">{props.description}</p>
+      <ul className="flex gap-2">
         {props.skills.map((skill) => (
-          <li key={skill}>{skill}</li>
+          <li key={skill}>
+            <Pill>{skill}</Pill>
+          </li>
         ))}
       </ul>
-      <p>{props.description}</p>
     </article>
   );
 };

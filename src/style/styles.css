@@ -72,6 +72,12 @@ header > nav {
 }
 
 #hero {
+  /* background: conic-gradient(
+    from -135deg at -10% center,
+    var(--primary-color) 40%,
+    var(--accent-color) 50%,
+    var(--dark-purple) 70% 100%
+  ); */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -177,4 +183,33 @@ header > nav {
   to {
     background-color: hsl(var(--primary-color) / 1);
   }
+}
+
+.work {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--eerie-black);
+  background-image: linear-gradient(
+    to top,
+    hsl(0 0% 0% / 0.25),
+    var(--eerie-black)
+  );
+}
+
+.work::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  z-index: 0;
+  width: 140%;
+  height: 65%;
+  background: radial-gradient(
+    closest-side,
+    hsl(var(--primary-color-base) / 0.5),
+    5%,
+    transparent
+  );
+  top: 0;
+  right: 50%;
+  transform: translate(50%, -52%);
 }

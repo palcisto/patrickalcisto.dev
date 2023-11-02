@@ -13,7 +13,7 @@ If you're still reading this, then I appreciate your patience and interest in wh
 Cheers,
 Patrick
 
-## New (or Older) Things I'm trying
+## New (or Newish To Me) Things I'm trying
 
 Here's a list of a few things I'm trying out:
 

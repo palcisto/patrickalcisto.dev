@@ -26,6 +26,7 @@ export default function WhoAmI(props: WhoAmIProps) {
           needed.
         </p>
       </div>
+
       {props.profilePhoto}
     </section>
   );
