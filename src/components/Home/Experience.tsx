@@ -28,7 +28,7 @@ type PillProps = {
 };
 
 const Pill = (props: PillProps) => (
-  <span className="p-2 text-sm rounded-md bg-eerie-black text-primary">
+  <span className="p-2 text-sm rounded-md bg-eerie-black text-primary whitespace-nowrap">
     {props.children}
   </span>
 );
@@ -54,19 +54,21 @@ export const Work = (props: WorkProps) => {
   return (
     <article className="mb-16 work p-8 rounded-tr-xl rounded-bl-xl border border-accent border-solid">
       <h4 className="text-2xl text-primary mb-4">{props.title}</h4>
-      <h5 className="text-accent">
+      <h5 className="text-accent mb-2">
         {props.company} | {props.type}
       </h5>
-      <div className="text-accent">
+      <div className="text-gray-200 mb-2">
         <time dateTime="">{formatWorkDate(props.employmentDates.start)}</time>
         &nbsp;-&nbsp;
         <time dateTime="">{endDate}</time>
       </div>
-      <div className="text-accent">{props.location}</div>
-      <p className="m-0 mb-8 p-0">{props.description}</p>
-      <ul className="flex gap-2">
+      <div className="text-gray-500 mb-2">{props.location}</div>
+      <p className="font-light m-0 mb-12 p-0 tracking-wide">
+        {props.description}
+      </p>
+      <ul className="flex gap-4 flex-wrap">
         {props.skills.map((skill) => (
-          <li key={skill}>
+          <li className="block" key={skill}>
             <Pill>{skill}</Pill>
           </li>
         ))}
