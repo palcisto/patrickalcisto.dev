@@ -6,11 +6,14 @@ const developerTypes = ['Frontend', 'UI', 'UX'];
  * TODO: alternate the developer type every 3 seconds
  */
 
-export interface HeroProps {}
+export interface HeroProps {
+  profilePhoto: string;
+}
 
 export default function Hero(props: HeroProps) {
   return (
     <section id="hero" className="min-h-screen">
+      {props.profilePhoto}
       <h1 className="text-center md:text-left">
         Senior <span>Frontend</span> Developer
       </h1>

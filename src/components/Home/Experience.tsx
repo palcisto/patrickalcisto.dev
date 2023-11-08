@@ -12,13 +12,15 @@ export interface ExperienceProps {}
 
 export default function Experience(props: ExperienceProps) {
   return (
-    <section id="experience" className="grid grid-cols-2 gap-12">
+    <section id="experience">
       <h2 className="text-lg md:text-4xl font-title mb-12 drop-shadow-titles">
         Experience
       </h2>
-      {workExperience.map((work, i) => (
-        <Work key={i} {...work} />
-      ))}
+      <div className="grid grid-cols-2 gap-12">
+        {workExperience.map((work, i) => (
+          <Work key={i} {...work} />
+        ))}
+      </div>
     </section>
   );
 }
@@ -52,7 +54,7 @@ export const Work = (props: WorkProps) => {
       ? formatWorkDate(props.employmentDates.end)
       : 'present';
   return (
-    <article className="mb-16 work p-8 rounded-tr-xl rounded-bl-xl border border-accent border-solid">
+    <article className="mb-16 work p-8 rounded-tr-xl rounded-bl-xl border-0 border-accent border-solid">
       <h4 className="text-2xl text-primary mb-4">{props.title}</h4>
       <h5 className="text-accent mb-2">
         {props.company} | {props.type}

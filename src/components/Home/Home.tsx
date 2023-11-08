@@ -15,8 +15,8 @@ export function Home(props: HomeProps) {
     <>
       <Header />
       <main>
-        <Hero />
-        <WhoAmI profilePhoto={props.profilePhoto} />
+        <Hero profilePhoto={props.profilePhoto} />
+        <WhoAmI />
         <Skills />
         <Experience />
         <Contact />

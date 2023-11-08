@@ -1,15 +1,10 @@
 import * as React from 'react';
 
-export interface WhoAmIProps {
-  profilePhoto: string;
-}
+export interface WhoAmIProps {}
 
 export default function WhoAmI(props: WhoAmIProps) {
   return (
-    <section
-      id="who-am-i"
-      className="flex flex-col md:flex-row gap-24 mb-48 px-8 md:px-56"
-    >
+    <section id="who-am-i" className="flex flex-col gap-24 mb-48 px-8 md:px-56">
       <div className="text-center md:text-right">
         <h2 className="text-3xl md:text-4xl font-title mb-12 drop-shadow-titles">
           Who Am I?
@@ -27,7 +22,30 @@ export default function WhoAmI(props: WhoAmIProps) {
         </p>
       </div>
 
-      {props.profilePhoto}
+      <div className="text-center md:text-left">
+        <h2 className="text-3xl md:text-4xl font-title mb-12 drop-shadow-titles">
+          What Do I Do?
+        </h2>
+        <p className="text-lg font-light">
+          I am a UI developer with a focus on React. I have experience with
+          other frameworks and languages but React is my jam. I love creating
+          beautiful, responsive, and accessible components that are easy to use
+          and maintain. I am also a big fan of Styled Components and use them
+          whenever possible.
+        </p>
+      </div>
+
+      <div>
+        <h3 className="text-2xl md:text-4xl font-title mb-12 drop-shadow-titles">
+          Things I'm experimenting with
+        </h3>
+        <ul>
+          <li>Astro</li>
+          <li>Netlify</li>
+          <li>Responsive Design with Tailwindcss</li>
+          <li>Design</li>
+        </ul>
+      </div>
     </section>
   );
 }
