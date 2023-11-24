@@ -10,7 +10,8 @@
       "type": "self-employed",
       "location": "Charlotte, NC",
       "skills": ["TypeScript", "React", "Next.js"],
-      "description": "I have decided to take on the challenge of starting and running my own mountain bike instruction and coaching company. This allows me to share my love of mountain biking with others and while helping people gain the skills to ride safely and confidently!\n\nThis venture is giving me the chance to combine two of my passions, mountain biking & web development. Mountain biking has always been my top hobby for 19 years from riding for fun to competing at the international level. Now as an instructor I get to pass on my passion for the sport & help others reach their goals in riding. I also get a chance to capitalize on my 19 years of experience in web design and software development to build out and maintain my company website. I created the logo and branding that will represent the Ride Skill mission and beliefs for years to come.\n\nResponsibilities:\n- skills coach and instructor\n- business administration\n- logo and branding design\n- website design\n- website development and maintenance"
+      "description": "I have decided to take on the challenge of starting and running my own mountain bike instruction and coaching company. This allows me to share my love of mountain biking with others and while helping people gain the skills to ride safely and confidently!\n\nThis venture is giving me the chance to combine two of my passions, mountain biking & web development. Mountain biking has always been my top hobby for 19 years from riding for fun to competing at the international level. Now as an instructor I get to pass on my passion for the sport & help others reach their goals in riding. I also get a chance to capitalize on my 19 years of experience in web design and software development to build out and maintain my company website. I created the logo and branding that will represent the Ride Skill mission and beliefs for years to come.\n\nResponsibilities:\n- skills coach and instructor\n- business administration\n- logo and branding design\n- website design\n- website development and maintenance",
+      "isPreferred": false
     },
     {
       "title": "React Web Technical Interviewer",
@@ -27,7 +28,8 @@
         "Software Engineering",
         "Web Development"
       ],
-      "description": "As a React Web Technical Interviewer for G2i I work as part of the vetting team to learn and verify the amount of knowledge and expertise candidates have with developing software and web sites with React and JavaScript.\n\nI like to treat each interview more like a conversation between two developers where we are trying to solve an assortment of problems and discuss some theory around software development. Meanwhile I am trying to gain an understanding of what knowledge the candidate possesses and where they are strong and what their weak points are.\n\nI then strive to provide valuable feedback that will help the candidate not only strengthen their knowledge but also grow as a developer."
+      "description": "As a React Web Technical Interviewer for G2i I work as part of the vetting team to learn and verify the amount of knowledge and expertise candidates have with developing software and web sites with React and JavaScript.\n\nI like to treat each interview more like a conversation between two developers where we are trying to solve an assortment of problems and discuss some theory around software development. Meanwhile I am trying to gain an understanding of what knowledge the candidate possesses and where they are strong and what their weak points are.\n\nI then strive to provide valuable feedback that will help the candidate not only strengthen their knowledge but also grow as a developer.",
+      "isPreferred": false
     },
     {
       "title": "Senior UI Developer",
@@ -39,7 +41,8 @@
       "type": "freelance",
       "location": "remote",
       "skills": ["TypeScript", "React", "ERB", "GraphQL", "tailwindcss"],
-      "description": "TableRead is a new startup for which I was brought on for a month to aid in development of their product&CloseCurlyQuote;s UI and their marketing site. During this project, while I did implement a few small UI enhancements a large amount of the work involved refactoring React components to reduce errors and improve performance by utilizing a combination of common React design patterns, error boundaries, and encapsulating common logic in custom React hooks.\n\nAdditionally, I mentored the CTO/Lead Engineer on common React patterns and best practices that he could utilize to develop React components that would be less bug-prone, more performant, and easier to maintain. Finally, I also developed the home page and re-usable templates ancillary pages for their marketing site in Ruby on Rails ERB, applying modern responsive design techniques to ensure the best user experience on various platforms."
+      "description": "TableRead is a new startup for which I was brought on for a month to aid in development of their product&CloseCurlyQuote;s UI and their marketing site. During this project, while I did implement a few small UI enhancements a large amount of the work involved refactoring React components to reduce errors and improve performance by utilizing a combination of common React design patterns, error boundaries, and encapsulating common logic in custom React hooks.\n\nAdditionally, I mentored the CTO/Lead Engineer on common React patterns and best practices that he could utilize to develop React components that would be less bug-prone, more performant, and easier to maintain. Finally, I also developed the home page and re-usable templates ancillary pages for their marketing site in Ruby on Rails ERB, applying modern responsive design techniques to ensure the best user experience on various platforms.",
+      "isPreferred": true
     },
     {
       "title": "React Native UI Developer",
@@ -57,7 +60,8 @@
         "GraphQL/Apollo",
         "Nativebase"
       ],
-      "description": "Worked closely with the CTO/backend developer to develop a collection of new view and update existing views based on new designs all while learning React Native on the fly. I was also tasked with finding a React Native UI library that was easier to use, provided more flexibility and offered a larger pool of useful components to help boost our productivity while also serving as a foundation for creating a design system.\n\n- Migrate app from UI Kitten UI library to NativeBase for a more flexible API and better DX\n- Created and implemented a design system utilizing NativeBase to provide a more cohesive UI/UX"
+      "description": "Worked closely with the CTO/backend developer to develop a collection of new view and update existing views based on new designs all while learning React Native on the fly. I was also tasked with finding a React Native UI library that was easier to use, provided more flexibility and offered a larger pool of useful components to help boost our productivity while also serving as a foundation for creating a design system.\n\n- Migrate app from UI Kitten UI library to NativeBase for a more flexible API and better DX\n- Created and implemented a design system utilizing NativeBase to provide a more cohesive UI/UX",
+      "isPreferred": true
     },
     {
       "title": "Fullstack Developer",
@@ -76,7 +80,8 @@
         "Prisma",
         "tailwindcss"
       ],
-      "description": "This application was built using Blitz.js which was a fork of Next.js combined with Prisma and a number of opinionated conventions to develop fullstack applications that can scale. One of my primary tasks during this project was to update the existing 'Booking' experience to include a step that would serve to upsell complementary services to the home schooling parent which would aid homeschool students in preparing for end of year testing. This work involved a collection of tasks that included updating models defined in a Prisma schema, creating migrations, adding additional business logic in the backend and behavioral logic in the frontend using TypeScript, and building out new sections of UI with React and Tailwind CSS.\n\n- Worked closely with owner in developing new features that entailed frontend and backend tasks\n- Resolve various issues detailed in GitHub Projects"
+      "description": "This application was built using Blitz.js which was a fork of Next.js combined with Prisma and a number of opinionated conventions to develop fullstack applications that can scale. One of my primary tasks during this project was to update the existing 'Booking' experience to include a step that would serve to upsell complementary services to the home schooling parent which would aid homeschool students in preparing for end of year testing. This work involved a collection of tasks that included updating models defined in a Prisma schema, creating migrations, adding additional business logic in the backend and behavioral logic in the frontend using TypeScript, and building out new sections of UI with React and Tailwind CSS.\n\n- Worked closely with owner in developing new features that entailed frontend and backend tasks\n- Resolve various issues detailed in GitHub Projects",
+      "isPreferred": false
     },
     {
       "title": "Software Developer",
@@ -94,7 +99,8 @@
         "GraphQL/Apollo",
         "Material UI"
       ],
-      "description": "- Developed new features within a new codebase while working closely with product owners, designers, and backend developers\n- Ensured proper UX and accessibility practices were incorporated throughout\n- Worked closely with other frontend developers on the team to define team git flow and coding standards\n- Encouraged and assisted the adoption of TypeScript in primary frontend applications\n- Developed and maintained an internal UI library for sharing of components and utilities which resulted in an overall 15% reduction of duplicated code across the two primary frontend code bases in just it's first 3 months of existence and enforced standardization between the two apps"
+      "description": "- Developed new features within a new codebase while working closely with product owners, designers, and backend developers\n- Ensured proper UX and accessibility practices were incorporated throughout\n- Worked closely with other frontend developers on the team to define team git flow and coding standards\n- Encouraged and assisted the adoption of TypeScript in primary frontend applications\n- Developed and maintained an internal UI library for sharing of components and utilities which resulted in an overall 15% reduction of duplicated code across the two primary frontend code bases in just it's first 3 months of existence and enforced standardization between the two apps",
+      "isPreferred": true
     },
     {
       "title": "React UX Developer",
@@ -113,7 +119,8 @@
         "Firebase",
         "CSS Modules"
       ],
-      "description": "- Developed new features and maintained existing codebase while working closely with the founder, designer, and development team\n- Ensured proper UX and accessibility practices were incorporated throughout\n- Developed a design system to improve consistency across the app\n- Assisted in implementing and converting the codebase to TypeScript, improving documentation through the creation and implementation of a style-guide, and declaring well-defined conventions and coding practices with tools such as ESlint and Prettier\n- Led a spike (research and exploration) for implementing a paywall"
+      "description": "- Developed new features and maintained existing codebase while working closely with the founder, designer, and development team\n- Ensured proper UX and accessibility practices were incorporated throughout\n- Developed a design system to improve consistency across the app\n- Assisted in implementing and converting the codebase to TypeScript, improving documentation through the creation and implementation of a style-guide, and declaring well-defined conventions and coding practices with tools such as ESlint and Prettier\n- Led a spike (research and exploration) for implementing a paywall",
+      "isPreferred": false
     },
     {
       "title": "Software Engineer III",
@@ -125,7 +132,8 @@
       "type": "contract",
       "location": "remote",
       "skills": ["JavaScript", "Ember.js", "Microservices", "SCSS", "QUnit"],
-      "description": "Worked alongside 40+ UX designers, researchers, writers, and engineers as a member of the UX/UI team responsible for the Falcon platform's UI.\n\n- Learned Ember.js and the team's system on the fly to immediately begin contributing to bug fixes and new feature development\n- Developed new features and maintained existing codebase, working closely with designers and project managers to problem-solve independently and collaboratively\n- Executed best practice development processes, including peer reviews, pair programming, and TDD to consistently ensure high quality deliverables\n- Engaged in ongoing team discussions, improved internal tooling, and extended and documented internal libraries"
+      "description": "Worked alongside 40+ UX designers, researchers, writers, and engineers as a member of the UX/UI team responsible for the Falcon platform's UI.\n\n- Learned Ember.js and the team's system on the fly to immediately begin contributing to bug fixes and new feature development\n- Developed new features and maintained existing codebase, working closely with designers and project managers to problem-solve independently and collaboratively\n- Executed best practice development processes, including peer reviews, pair programming, and TDD to consistently ensure high quality deliverables\n- Engaged in ongoing team discussions, improved internal tooling, and extended and documented internal libraries",
+      "isPreferred": true
     },
     {
       "title": "Lead Front-End Developer",
@@ -147,7 +155,8 @@
         "Gulp",
         "Webpack"
       ],
-      "description": "As the lead front-end developer, I am responsible for working with our team to set and uphold the coding standards of all frontend technologies (JS, (S)CSS, Angular, HTML) for all QuietStream applications. Additionally, I work with a team of dev leads in assisting our project manager/scrum master with project and task planning for the frontend side of work. I also work closely with our UX/UI team, project manager and business stakeholders to ensure that UX and UI design is an integral step of the development cycle of every new feature and enhancement.\n\nI strive to develop UIs with a high level of attention to detail while considering the user's experience every step of the way."
+      "description": "As the lead front-end developer, I am responsible for working with our team to set and uphold the coding standards of all frontend technologies (JS, (S)CSS, Angular, HTML) for all QuietStream applications. Additionally, I work with a team of dev leads in assisting our project manager/scrum master with project and task planning for the frontend side of work. I also work closely with our UX/UI team, project manager and business stakeholders to ensure that UX and UI design is an integral step of the development cycle of every new feature and enhancement.\n\nI strive to develop UIs with a high level of attention to detail while considering the user's experience every step of the way.",
+      "isPreferred": false
     },
     {
       "title": "Software Engineer",
@@ -168,7 +177,8 @@
         "Gulp",
         "Webpack"
       ],
-      "description": "QuietStream Financial has re-branded as Investor Management Services.\n\nAs a front end developer part of a new and growing engineering team, my focus is on developing and enhancing the user interfaces and our users' experience with a high level of attention to detail.\n\nRecently our focus has been on migrating the front end of our applications from Ruby on Rails to AngularJS with Rails providing the necessary APIs. I am responsible for standardizing the companies coding practices for CSS, HTML, and JavaScript coding practices, along with the way we implement and manage front end dependencies."
+      "description": "QuietStream Financial has re-branded as Investor Management Services.\n\nAs a front end developer part of a new and growing engineering team, my focus is on developing and enhancing the user interfaces and our users' experience with a high level of attention to detail.\n\nRecently our focus has been on migrating the front end of our applications from Ruby on Rails to AngularJS with Rails providing the necessary APIs. I am responsible for standardizing the companies coding practices for CSS, HTML, and JavaScript coding practices, along with the way we implement and manage front end dependencies.",
+      "isPreferred": false
     },
     {
       "title": "Web Developer & UX Specialist",
@@ -189,7 +199,8 @@
         "Middleman App",
         "Squarespace"
       ],
-      "description": "I was the Pixel Surgeon responsible for strategically placing each and every pixel brilliantly designed by the Creative Director, for the ultimate User EXperience across the board for all of BriteVerify's apps and public facing sites. I hand coded all standards compliant CSS and semantic HTML using cutting-edge techniques and technologies within Ruby on Rails and middleware environments to create brilliant user experiences for BriteVerify customers no matter the device. I was responsible for the front end development of all BriteVerify's public facing assets on the web, which included the development, device responsive, cross-device and cross-browser testing, maintenance and troubleshooting. I worked within a small team of five, including one backend engineer, two fullstack developers, and a designer."
+      "description": "I was the Pixel Surgeon responsible for strategically placing each and every pixel brilliantly designed by the Creative Director, for the ultimate User EXperience across the board for all of BriteVerify's apps and public facing sites. I hand coded all standards compliant CSS and semantic HTML using cutting-edge techniques and technologies within Ruby on Rails and middleware environments to create brilliant user experiences for BriteVerify customers no matter the device. I was responsible for the front end development of all BriteVerify's public facing assets on the web, which included the development, device responsive, cross-device and cross-browser testing, maintenance and troubleshooting. I worked within a small team of five, including one backend engineer, two fullstack developers, and a designer.",
+      "isPreferred": false
     }
   ]
 }
