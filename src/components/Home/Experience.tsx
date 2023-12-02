@@ -1,8 +1,29 @@
 import * as React from 'react';
 import workExperienceJson from '../../data/work-experience.json';
 import { DateTime } from 'luxon';
+import lobbyCreLogo from '@/images/lobby-cre-logo.png';
+import homeschoolBossLogo from '@/images/homeschool-boss-logo.png';
+import crowdstrikeLogo from '@/images/crowdstrike-logo.png';
+import paymyntLogo from '@/images/paymynt-logo.png';
+import tablereadLogo from '@/images/tableread-logo.png';
 
-const workExperience = workExperienceJson.data as WorkProps[];
+type CompanyNames =
+  | 'lobby cre'
+  | 'homeschool boss'
+  | 'crowdStrike'
+  | 'paymynt'
+  | 'tableread';
+const companyLogos = {
+  'lobby cre': { ...lobbyCreLogo },
+  'homeschool boss': { ...homeschoolBossLogo },
+  crowdstrike: { ...crowdstrikeLogo },
+  paymynt: { ...paymyntLogo },
+  tableread: { ...tablereadLogo },
+};
+
+const workExperience = workExperienceJson.data.filter(
+  (w) => w.isPreferred
+) as WorkProps[];
 
 function formatWorkDate(dateString) {
   return DateTime.fromISO(dateString).toFormat('MMM yyyy');
@@ -13,10 +34,10 @@ export interface ExperienceProps {}
 export default function Experience(props: ExperienceProps) {
   return (
     <section id="experience">
-      <h2 className="text-lg md:text-4xl font-title mb-12 drop-shadow-titles">
-        Experience
+      <h2 className="text-lg text-center md:text-4xl font-title mb-12 drop-shadow-titles">
+        Work
       </h2>
-      <div className="grid grid-cols-2 gap-12">
+      <div className="grid grid-cols-2 3xl:grid-cols-3 gap-16 max-w">
         {workExperience.map((work, i) => (
           <Work key={i} {...work} />
         ))}
@@ -46,6 +67,7 @@ type WorkProps = {
   location: string;
   skills: Array<string>;
   description: string;
+  isPreferred: boolean;
 };
 
 export const Work = (props: WorkProps) => {
@@ -53,18 +75,30 @@ export const Work = (props: WorkProps) => {
     props.employmentDates.end !== null
       ? formatWorkDate(props.employmentDates.end)
       : 'present';
+  const company = props.company.toLowerCase() as CompanyNames;
+  const logo = companyLogos[company];
+  const { src, height, width } = logo;
+  console.log({ logo });
+
   return (
-    <article className="mb-16 work p-8 rounded-tr-xl rounded-bl-xl border-0 border-accent border-solid">
-      <h4 className="text-2xl text-primary mb-4">{props.title}</h4>
-      <h5 className="text-accent mb-2">
-        {props.company} | {props.type}
-      </h5>
-      <div className="text-gray-200 mb-2">
+    <article className="work p-12 rounded-xl border-0 border-accent border-solid">
+      <picture className="">
+        <img
+          className="work__logo mb-8"
+          src={src}
+          height={height}
+          width={width}
+          alt={props.company}
+        />
+      </picture>
+      <h4 className="text-3xl text-primary mb-4">{props.title}</h4>
+      <h5 className="text-accent mb-2">{props.company}</h5>
+      <div className="text-gray-200 mb-2 hidden">
         <time dateTime="">{formatWorkDate(props.employmentDates.start)}</time>
         &nbsp;-&nbsp;
         <time dateTime="">{endDate}</time>
       </div>
-      <div className="text-gray-500 mb-2">{props.location}</div>
+      <div className="text-gray-500 mb-2 hidden">{props.location}</div>
       <p className="font-light m-0 mb-12 p-0 tracking-wide">
         {props.description}
       </p>

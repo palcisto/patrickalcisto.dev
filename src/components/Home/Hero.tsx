@@ -7,13 +7,13 @@ const developerTypes = ['Frontend', 'UI', 'UX'];
  */
 
 export interface HeroProps {
-  profilePhoto: string;
+  children: string;
 }
 
 export default function Hero(props: HeroProps) {
   return (
     <section id="hero" className="min-h-screen">
-      {props.profilePhoto}
+      {props.children}
       <h1 className="text-center md:text-left">
         Senior <span>Frontend</span> Developer
       </h1>

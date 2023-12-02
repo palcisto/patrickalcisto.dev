@@ -7,7 +7,7 @@ import Experience from './Experience';
 import Contact from './Contact';
 
 export interface HomeProps {
-  profilePhoto: string;
+  children: string;
 }
 
 export function Home(props: HomeProps) {
@@ -15,7 +15,7 @@ export function Home(props: HomeProps) {
     <>
       <Header />
       <main>
-        <Hero profilePhoto={props.profilePhoto} />
+        <Hero>{props.children}</Hero>
         <WhoAmI />
         <Skills />
         <Experience />
