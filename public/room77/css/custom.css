@@ -167,6 +167,10 @@ a.button:focus {
   text-decoration: none;
 }
 
+.hotel-rating {
+  margin-bottom: 1rem;
+}
+
 .hotel-about {
   margin-bottom: 4.5rem;
   padding-top: 3.5rem;
@@ -230,6 +234,43 @@ a.button:focus {
   line-height: 1.25;
 }
 
+.subheader {
+  background-color: var(--primary-color);
+  width: 100%;
+}
+.search {
+  align-items: center;
+  container: searchContainer / inline-size;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+.search__form {
+  width: 100%;
+}
+
+.search__input {
+  background-color: var(--white);
+  border: 0;
+  border-radius: var(--full-border-radius);
+  color: var(--gray-dark);
+  font-size: 1rem;
+  line-height: 1.1;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+.search__input::placeholder {
+  color: var(--gray);
+}
+
+.search__input:focus {
+  box-shadow: 0px 16px 24px rgb(83 91 100 / 24%) !important;
+  outline: 3px solid var(--primary-color-light) !important;
+}
+
 @media (min-width: 768px) {
   .nearby-hotels__list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -253,5 +294,11 @@ a.button:focus {
   }
   .nearby-hotel {
     scroll-snap-align: start;
+  }
+  .search {
+    padding: 1rem;
+  }
+  .search__input {
+    font-size: 1rem;
   }
 }

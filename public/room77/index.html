@@ -29,7 +29,6 @@
       sizes="16x16"
       href="images/favicons/favicon-16x16.png"
     />
-    <!-- <link rel="manifest" href="/favicons/manifest.json"> -->
     <link
       rel="mask-icon"
       href="/favicons/safari-pinned-tab.svg"
@@ -39,14 +38,17 @@
     <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
 
-    <!-- original CSS -->
     <link href="css/site.css" rel="stylesheet" />
-    <!-- new CSS 10/2023 -->
     <link href="css/custom.css" rel="stylesheet" />
 
     <link rel="preload" as="image" href="images/w-hotels-logo.webp" />
     <link rel="preload" as="image" href="images/w-hotel-pool.png" />
     <link rel="preload" as="image" href="images/map-246.png" />
+
+    <script
+      src="https://cdn.jsdelivr.net/gh/aboxofsox/feather-icon-web-component@master/dist/feather-icon-wc.js"
+      defer
+    ></script>
 
     <meta name="csrf-param" content="_csrf" />
     <meta name="csrf-token" content="" />
@@ -54,426 +56,419 @@
 
   <body class="booking-checkrates-page d-flex flex-column h-100">
     <div class="flex-shrink-0">
-      <!-- start header -->
-      <header>
-        <div class="header navbar navbar-dark bg-dark header-social">
-          <div class="container container-1280 d-flex align-content-around">
-            <div class="logo flex-grow-1">
-              <a href="#" class="navbar-brand" title="Guest Reservations">
-                <div class="logo-room77">Room 77</div>
-                <small>An independent travel network</small>
-              </a>
-            </div>
-            <div class="menu for-desktop">
-              <nav class="my-2 my-md-0 mr-md-3">
-                <a
-                  title="Groups (9+ Rooms)"
-                  class="js-hl-groups-link"
-                  href="https://groups.guestreservations.com/Group-Rate/?CheckInDate1=10%2F27%2F2023&CheckOutDate1=10%2F28%2F2023&PreferredHotels=Hampton+Inn+Boca+Raton&city=Boca+Raton"
-                  >Groups (9+ Rooms)</a
-                >
-                <a
-                  title="Travel Guides"
-                  class="js-hl-guides"
-                  href="https://www.guestreservations.com/about/news"
-                  >Travel Guides</a
-                >
-                <a
-                  title="My Booking"
-                  class="js-hl-my-booking"
-                  href="https://www.guestreservations.com/about/mybooking"
-                  >My Booking</a
-                >
-              </nav>
-            </div>
+      <header class="header navbar navbar-dark bg-dark header-social">
+        <div class="container container-1280 d-flex align-content-around">
+          <div class="logo flex-grow-1">
+            <a href="#" class="navbar-brand" title="Guest Reservations">
+              <div class="logo-room77">Room 77</div>
+              <small>An independent travel network</small>
+            </a>
+          </div>
+          <div class="menu for-desktop">
+            <nav class="my-2 my-md-0 mr-md-3">
+              <a
+                title="Groups (9+ Rooms)"
+                class="js-hl-groups-link"
+                href="https://groups.guestreservations.com/Group-Rate/?CheckInDate1=10%2F27%2F2023&CheckOutDate1=10%2F28%2F2023&PreferredHotels=Hampton+Inn+Boca+Raton&city=Boca+Raton"
+                >Groups (9+ Rooms)</a
+              >
+              <a
+                title="Travel Guides"
+                class="js-hl-guides"
+                href="https://www.guestreservations.com/about/news"
+                >Travel Guides</a
+              >
+              <a
+                title="My Booking"
+                class="js-hl-my-booking"
+                href="https://www.guestreservations.com/about/mybooking"
+                >My Booking</a
+              >
+            </nav>
+          </div>
 
-            <div
-              class="border-left align-self-stretch changing-currency d-none"
-            >
-              <div class="dropdown scroll-bar js-currency d-flex">
-                <button
-                  type="button"
-                  class="dropdown-toggle btn"
-                  id="header-currency"
-                  data-toggle="dropdown"
-                  data-display="static"
-                  aria-expanded="false"
-                  aria-haspopup="true"
-                ></button>
-                <input
-                  name="currency"
-                  value="USD"
-                  type="hidden"
-                  id="currency"
-                />
-                <div
-                  class="dropdown-menu js-dropdown-menu dropdown-menu-right"
-                  aria-labelledby="header-currency"
-                >
-                  <div class="scroll-inner simple-scrollbar">
-                    <button
-                      type="button"
-                      data-option="USD"
-                      data-short-label="$ USD"
-                      class="dropdown-item"
-                    >
-                      <span>$</span> United States Dollars
-                    </button>
-                    <button
-                      type="button"
-                      data-option="EUR"
-                      data-short-label="€ EUR"
-                      class="dropdown-item"
-                    >
-                      <span>€</span> Euros
-                    </button>
-                    <button
-                      type="button"
-                      data-option="GBP"
-                      data-short-label="£ GBP"
-                      class="dropdown-item"
-                    >
-                      <span>£</span> British Pounds Sterling
-                    </button>
-                    <button
-                      type="button"
-                      data-option="CAD"
-                      data-short-label="$ CAD"
-                      class="dropdown-item"
-                    >
-                      <span>$</span> Canadian Dollars
-                    </button>
-                    <button
-                      type="button"
-                      data-option="AUD"
-                      data-short-label="$ AUD"
-                      class="dropdown-item"
-                    >
-                      <span>$</span> Australian Dollars
-                    </button>
-                    <button
-                      type="button"
-                      data-option="ARS"
-                      data-short-label="AR$"
-                      class="dropdown-item"
-                    >
-                      <span>AR$</span> Argentine Pesos
-                    </button>
-                    <button
-                      type="button"
-                      data-option="BRL"
-                      data-short-label="R$"
-                      class="dropdown-item"
-                    >
-                      <span>R$</span> Brazilian Reals
-                    </button>
-                    <button
-                      type="button"
-                      data-option="CNY"
-                      data-short-label="CN¥"
-                      class="dropdown-item"
-                    >
-                      <span>CN¥</span> Chinese Yuan
-                    </button>
-                    <button
-                      type="button"
-                      data-option="CZK"
-                      data-short-label="Kč"
-                      class="dropdown-item"
-                    >
-                      <span>Kč</span> Czech Republic Korunas
-                    </button>
-                    <button
-                      type="button"
-                      data-option="DKK"
-                      data-short-label="Dkr"
-                      class="dropdown-item"
-                    >
-                      <span>Dkr</span> Danish Kroner
-                    </button>
-                    <button
-                      type="button"
-                      data-option="HKD"
-                      data-short-label="HK$"
-                      class="dropdown-item"
-                    >
-                      <span>HK$</span> Hong Kong Dollars
-                    </button>
-                    <button
-                      type="button"
-                      data-option="INR"
-                      data-short-label="₹"
-                      class="dropdown-item"
-                    >
-                      <span>₹</span> Indian Rupees
-                    </button>
-                    <button
-                      type="button"
-                      data-option="IDR"
-                      data-short-label="Rp"
-                      class="dropdown-item"
-                    >
-                      <span>Rp</span> Indonesian Rupiah
-                    </button>
-                    <button
-                      type="button"
-                      data-option="JPY"
-                      data-short-label="JP¥"
-                      class="dropdown-item"
-                    >
-                      <span>JP¥</span> Japanese Yen
-                    </button>
-                    <button
-                      type="button"
-                      data-option="KRW"
-                      data-short-label="₩"
-                      class="dropdown-item"
-                    >
-                      <span>₩</span> South Korean Won
-                    </button>
-                    <button
-                      type="button"
-                      data-option="MYR"
-                      data-short-label="RM"
-                      class="dropdown-item"
-                    >
-                      <span>RM</span> Malaysian Ringgit
-                    </button>
-                    <button
-                      type="button"
-                      data-option="MXN"
-                      data-short-label="$ MXN"
-                      class="dropdown-item"
-                    >
-                      <span>MX$</span> Mexican Pesos
-                    </button>
-                    <button
-                      type="button"
-                      data-option="MAD"
-                      data-short-label="MAD"
-                      class="dropdown-item"
-                    >
-                      <span>MAD</span> Moroccan Dirham
-                    </button>
-                    <button
-                      type="button"
-                      data-option="ILS"
-                      data-short-label="₪"
-                      class="dropdown-item"
-                    >
-                      <span>₪</span> Israeli New Sheqels
-                    </button>
-                    <button
-                      type="button"
-                      data-option="TWD"
-                      data-short-label="NT$"
-                      class="dropdown-item"
-                    >
-                      <span>NT$</span> Taiwan New Dollar
-                    </button>
-                    <button
-                      type="button"
-                      data-option="NZD"
-                      data-short-label="NZ$"
-                      class="dropdown-item"
-                    >
-                      <span>NZ$</span> New Zealand Dollars
-                    </button>
-                    <button
-                      type="button"
-                      data-option="NOK"
-                      data-short-label="Nkr"
-                      class="dropdown-item"
-                    >
-                      <span>Nkr</span> Norwegian Kroner
-                    </button>
-                    <button
-                      type="button"
-                      data-option="PHP"
-                      data-short-label="₱"
-                      class="dropdown-item"
-                    >
-                      <span>₱</span> Philippine Peso
-                    </button>
-                    <button
-                      type="button"
-                      data-option="PLN"
-                      data-short-label="zł"
-                      class="dropdown-item"
-                    >
-                      <span>zł</span> Polish Zloty
-                    </button>
-                    <button
-                      type="button"
-                      data-option="RUB"
-                      data-short-label="руб."
-                      class="dropdown-item"
-                    >
-                      <span>руб.</span> Russian Rubles
-                    </button>
-                    <button
-                      type="button"
-                      data-option="SGD"
-                      data-short-label="S$"
-                      class="dropdown-item"
-                    >
-                      <span>S$</span> Singapore Dollars
-                    </button>
-                    <button
-                      type="button"
-                      data-option="ZAR"
-                      data-short-label="R"
-                      class="dropdown-item"
-                    >
-                      <span>R</span> South African Rand
-                    </button>
-                    <button
-                      type="button"
-                      data-option="SEK"
-                      data-short-label="Skr"
-                      class="dropdown-item"
-                    >
-                      <span>Skr</span> Swedish Kronor
-                    </button>
-                    <button
-                      type="button"
-                      data-option="CHF"
-                      data-short-label="₣"
-                      class="dropdown-item"
-                    >
-                      <span>₣</span> Swiss Francs
-                    </button>
-                    <button
-                      type="button"
-                      data-option="THB"
-                      data-short-label="฿"
-                      class="dropdown-item"
-                    >
-                      <span>฿</span> Thai Baht
-                    </button>
-                    <button
-                      type="button"
-                      data-option="TRY"
-                      data-short-label="TL"
-                      class="dropdown-item"
-                    >
-                      <span>TL</span> Turkish Lira
-                    </button>
-                    <button
-                      type="button"
-                      data-option="AED"
-                      data-short-label="Dh"
-                      class="dropdown-item"
-                    >
-                      <span>Dh</span> UAE Dirhams
-                    </button>
-                    <button
-                      type="button"
-                      data-option="VND"
-                      data-short-label="₫"
-                      class="dropdown-item"
-                    >
-                      <span>₫</span> Vietnamese Dong
-                    </button>
-                  </div>
+          <div class="border-left align-self-stretch changing-currency d-none">
+            <div class="dropdown scroll-bar js-currency d-flex">
+              <button
+                type="button"
+                class="dropdown-toggle btn"
+                id="header-currency"
+                data-toggle="dropdown"
+                data-display="static"
+                aria-expanded="false"
+                aria-haspopup="true"
+              ></button>
+              <input name="currency" value="USD" type="hidden" id="currency" />
+              <div
+                class="dropdown-menu js-dropdown-menu dropdown-menu-right"
+                aria-labelledby="header-currency"
+              >
+                <div class="scroll-inner simple-scrollbar">
+                  <button
+                    type="button"
+                    data-option="USD"
+                    data-short-label="$ USD"
+                    class="dropdown-item"
+                  >
+                    <span>$</span> United States Dollars
+                  </button>
+                  <button
+                    type="button"
+                    data-option="EUR"
+                    data-short-label="€ EUR"
+                    class="dropdown-item"
+                  >
+                    <span>€</span> Euros
+                  </button>
+                  <button
+                    type="button"
+                    data-option="GBP"
+                    data-short-label="£ GBP"
+                    class="dropdown-item"
+                  >
+                    <span>£</span> British Pounds Sterling
+                  </button>
+                  <button
+                    type="button"
+                    data-option="CAD"
+                    data-short-label="$ CAD"
+                    class="dropdown-item"
+                  >
+                    <span>$</span> Canadian Dollars
+                  </button>
+                  <button
+                    type="button"
+                    data-option="AUD"
+                    data-short-label="$ AUD"
+                    class="dropdown-item"
+                  >
+                    <span>$</span> Australian Dollars
+                  </button>
+                  <button
+                    type="button"
+                    data-option="ARS"
+                    data-short-label="AR$"
+                    class="dropdown-item"
+                  >
+                    <span>AR$</span> Argentine Pesos
+                  </button>
+                  <button
+                    type="button"
+                    data-option="BRL"
+                    data-short-label="R$"
+                    class="dropdown-item"
+                  >
+                    <span>R$</span> Brazilian Reals
+                  </button>
+                  <button
+                    type="button"
+                    data-option="CNY"
+                    data-short-label="CN¥"
+                    class="dropdown-item"
+                  >
+                    <span>CN¥</span> Chinese Yuan
+                  </button>
+                  <button
+                    type="button"
+                    data-option="CZK"
+                    data-short-label="Kč"
+                    class="dropdown-item"
+                  >
+                    <span>Kč</span> Czech Republic Korunas
+                  </button>
+                  <button
+                    type="button"
+                    data-option="DKK"
+                    data-short-label="Dkr"
+                    class="dropdown-item"
+                  >
+                    <span>Dkr</span> Danish Kroner
+                  </button>
+                  <button
+                    type="button"
+                    data-option="HKD"
+                    data-short-label="HK$"
+                    class="dropdown-item"
+                  >
+                    <span>HK$</span> Hong Kong Dollars
+                  </button>
+                  <button
+                    type="button"
+                    data-option="INR"
+                    data-short-label="₹"
+                    class="dropdown-item"
+                  >
+                    <span>₹</span> Indian Rupees
+                  </button>
+                  <button
+                    type="button"
+                    data-option="IDR"
+                    data-short-label="Rp"
+                    class="dropdown-item"
+                  >
+                    <span>Rp</span> Indonesian Rupiah
+                  </button>
+                  <button
+                    type="button"
+                    data-option="JPY"
+                    data-short-label="JP¥"
+                    class="dropdown-item"
+                  >
+                    <span>JP¥</span> Japanese Yen
+                  </button>
+                  <button
+                    type="button"
+                    data-option="KRW"
+                    data-short-label="₩"
+                    class="dropdown-item"
+                  >
+                    <span>₩</span> South Korean Won
+                  </button>
+                  <button
+                    type="button"
+                    data-option="MYR"
+                    data-short-label="RM"
+                    class="dropdown-item"
+                  >
+                    <span>RM</span> Malaysian Ringgit
+                  </button>
+                  <button
+                    type="button"
+                    data-option="MXN"
+                    data-short-label="$ MXN"
+                    class="dropdown-item"
+                  >
+                    <span>MX$</span> Mexican Pesos
+                  </button>
+                  <button
+                    type="button"
+                    data-option="MAD"
+                    data-short-label="MAD"
+                    class="dropdown-item"
+                  >
+                    <span>MAD</span> Moroccan Dirham
+                  </button>
+                  <button
+                    type="button"
+                    data-option="ILS"
+                    data-short-label="₪"
+                    class="dropdown-item"
+                  >
+                    <span>₪</span> Israeli New Sheqels
+                  </button>
+                  <button
+                    type="button"
+                    data-option="TWD"
+                    data-short-label="NT$"
+                    class="dropdown-item"
+                  >
+                    <span>NT$</span> Taiwan New Dollar
+                  </button>
+                  <button
+                    type="button"
+                    data-option="NZD"
+                    data-short-label="NZ$"
+                    class="dropdown-item"
+                  >
+                    <span>NZ$</span> New Zealand Dollars
+                  </button>
+                  <button
+                    type="button"
+                    data-option="NOK"
+                    data-short-label="Nkr"
+                    class="dropdown-item"
+                  >
+                    <span>Nkr</span> Norwegian Kroner
+                  </button>
+                  <button
+                    type="button"
+                    data-option="PHP"
+                    data-short-label="₱"
+                    class="dropdown-item"
+                  >
+                    <span>₱</span> Philippine Peso
+                  </button>
+                  <button
+                    type="button"
+                    data-option="PLN"
+                    data-short-label="zł"
+                    class="dropdown-item"
+                  >
+                    <span>zł</span> Polish Zloty
+                  </button>
+                  <button
+                    type="button"
+                    data-option="RUB"
+                    data-short-label="руб."
+                    class="dropdown-item"
+                  >
+                    <span>руб.</span> Russian Rubles
+                  </button>
+                  <button
+                    type="button"
+                    data-option="SGD"
+                    data-short-label="S$"
+                    class="dropdown-item"
+                  >
+                    <span>S$</span> Singapore Dollars
+                  </button>
+                  <button
+                    type="button"
+                    data-option="ZAR"
+                    data-short-label="R"
+                    class="dropdown-item"
+                  >
+                    <span>R</span> South African Rand
+                  </button>
+                  <button
+                    type="button"
+                    data-option="SEK"
+                    data-short-label="Skr"
+                    class="dropdown-item"
+                  >
+                    <span>Skr</span> Swedish Kronor
+                  </button>
+                  <button
+                    type="button"
+                    data-option="CHF"
+                    data-short-label="₣"
+                    class="dropdown-item"
+                  >
+                    <span>₣</span> Swiss Francs
+                  </button>
+                  <button
+                    type="button"
+                    data-option="THB"
+                    data-short-label="฿"
+                    class="dropdown-item"
+                  >
+                    <span>฿</span> Thai Baht
+                  </button>
+                  <button
+                    type="button"
+                    data-option="TRY"
+                    data-short-label="TL"
+                    class="dropdown-item"
+                  >
+                    <span>TL</span> Turkish Lira
+                  </button>
+                  <button
+                    type="button"
+                    data-option="AED"
+                    data-short-label="Dh"
+                    class="dropdown-item"
+                  >
+                    <span>Dh</span> UAE Dirhams
+                  </button>
+                  <button
+                    type="button"
+                    data-option="VND"
+                    data-short-label="₫"
+                    class="dropdown-item"
+                  >
+                    <span>₫</span> Vietnamese Dong
+                  </button>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="social-networks for-mobile">
-              <a
-                class="social-network"
+          <div class="social-networks for-mobile">
+            <a class="social-network" title="Facebook" href="#" target="_blank">
+              <img
                 title="Facebook"
-                href="#"
-                target="_blank"
-              >
-                <img
-                  title="Facebook"
-                  alt="Facebook"
-                  src="images/icons/facebook.png"
-                  height="20"
-                  width="20"
-                />
-              </a>
-              <a
-                class="social-network"
+                alt="Facebook"
+                src="images/icons/facebook.png"
+                height="20"
+                width="20"
+              />
+            </a>
+            <a class="social-network" title="Twitter" href="#" target="_blank">
+              <img
                 title="Twitter"
-                href="#"
-                target="_blank"
-              >
-                <img
-                  title="Twitter"
-                  alt="Twitter"
-                  src="images/icons/twitter.png"
-                  height="20"
-                  width="20"
-                />
-              </a>
-              <a
-                class="social-network"
+                alt="Twitter"
+                src="images/icons/twitter.png"
+                height="20"
+                width="20"
+              />
+            </a>
+            <a
+              class="social-network"
+              title="Instagram"
+              href="#"
+              target="_blank"
+            >
+              <img
                 title="Instagram"
-                href="#"
-                target="_blank"
-              >
-                <img
-                  title="Instagram"
-                  alt="Instagram"
-                  src="images/icons/instagram.png"
-                  height="20"
-                  width="20"
-                />
+                alt="Instagram"
+                src="images/icons/instagram.png"
+                height="20"
+                width="20"
+              />
+            </a>
+          </div>
+
+          <div class="phone border-left js-mp-track-phone">
+            <div class="for-desktop">
+              <a class="flex flex-column" href="tel:8554701611">
+                <span class="flex align-center gap-1_5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-phone"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                    ></path>
+                  </svg>
+                  Call Now
+                </span>
+                <span class="phone__number js-phone-number"
+                  >(855) 470-1611</span
+                >
               </a>
             </div>
 
-            <div class="phone border-left js-mp-track-phone">
-              <div class="for-desktop">
-                <a class="flex flex-column" href="tel:8554701611">
-                  <span class="flex align-center gap-1_5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="feather feather-phone"
-                    >
-                      <path
-                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                      ></path>
-                    </svg>
-                    Call Now
-                  </span>
-                  <span class="phone__number js-phone-number"
-                    >(855) 470-1611</span
-                  >
-                </a>
-              </div>
-
-              <div class="for-tablet">
-                <a class="d-flex flex-column" href="tel:8554709534">
-                  <span class="text-warning"></span>
-                  <span class="phone__number js-phone-number"
-                    >(855) 470-9534</span
-                  >
-                </a>
-              </div>
-              <div class="for-mobile">
-                <a class="d-flex flex-column" href="tel:8554709538">
-                  <span class="text-warning"></span>
-                  <span class="phone__number js-phone-number"
-                    >(855) 470-9538</span
-                  >
-                </a>
-              </div>
+            <div class="for-tablet">
+              <a class="d-flex flex-column" href="tel:8554709534">
+                <span class="text-warning"></span>
+                <span class="phone__number js-phone-number"
+                  >(855) 470-9534</span
+                >
+              </a>
+            </div>
+            <div class="for-mobile">
+              <a class="d-flex flex-column" href="tel:8554709538">
+                <span class="text-warning"></span>
+                <span class="phone__number js-phone-number"
+                  >(855) 470-9538</span
+                >
+              </a>
             </div>
           </div>
         </div>
       </header>
-      <!-- end header -->
+
+      <div class="subheader">
+        <div class="container">
+          <search class="search">
+            <form class="search__form" action="">
+              <input
+                class="search__input"
+                placeholder="Search..."
+                type="search"
+              />
+            </form>
+          </search>
+        </div>
+      </div>
 
       <main role="main">
         <div class="hotel-info-block">
@@ -481,6 +476,20 @@
             <div class="container">
               <div class="bg-title-hotel d-flex position-relative">
                 <div class="block-info">
+                  <div class="breadcrumb-block for-desktop for-tablet">
+                    <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb js-lp-breadcrumbs">
+                        <li><a class="breadcrumb-item" href="#">Home</a></li>
+                        <li><a class="breadcrumb-item" href="#">Hotels</a></li>
+                        <li><a class="breadcrumb-item" href="#">U.S.A.</a></li>
+                        <li>
+                          <a class="breadcrumb-item" href="#">Austin TX</a>
+                        </li>
+                        <li class="breadcrumb-item active">W Hotel Austin</li>
+                      </ol>
+                    </nav>
+                  </div>
+
                   <div class="hotel-branding">
                     <img
                       style="mix-blend-mode: difference"
@@ -493,21 +502,54 @@
                     <h1 class="hotel-name">W Hotel Austin</h1>
                   </div>
 
-                  <!-- Class "hotel-adress" required for ClickTripz-->
-                  <p class="hotel-adress">200 Lavaca Street, Austin TX</p>
-                  <div class="breadcrumb-block for-desktop for-tablet">
-                    <nav aria-label="breadcrumb">
-                      <ol class="breadcrumb js-lp-breadcrumbs">
-                        <li><a class="breadcrumb-item" href="#">Home</a></li>
-                        <li><a class="breadcrumb-item" href="#">Hotels</a></li>
-                        <li><a class="breadcrumb-item" href="h#">U.S.A.</a></li>
-                        <li>
-                          <a class="breadcrumb-item" href="#">Austin TX</a>
-                        </li>
-                        <li class="breadcrumb-item active">W Hotel Austin</li>
-                      </ol>
-                    </nav>
+                  <div class="hotel-rating">
+                    <p class="hotel-rating__text sr-only">3 stars</p>
+                    <div class="hotel-visual-rating">
+                      <img
+                        src="images/icons/star.svg"
+                        alt=""
+                        class="hotel-rating__star"
+                        loading="lazy"
+                        height="16"
+                        width="16"
+                      />
+                      <img
+                        src="images/icons/star.svg"
+                        alt=""
+                        class="hotel-rating__star"
+                        loading="lazy"
+                        height="16"
+                        width="16"
+                      />
+                      <img
+                        src="images/icons/star.svg"
+                        alt=""
+                        class="hotel-rating__star"
+                        loading="lazy"
+                        height="16"
+                        width="16"
+                      />
+                    </div>
                   </div>
+
+                  <address class="hotel-address">
+                    <feather-icon
+                      class="feather-icon"
+                      icon="map-pin"
+                      color="#2a809a"
+                      width="20"
+                      height="20"
+                    ></feather-icon>
+                    <p>200 Lavaca Street, Austin, TX, US 78701</p>
+                    <feather-icon
+                      class="feather-icon"
+                      icon="phone"
+                      color="#2a809a"
+                      width="20"
+                      height="20"
+                    ></feather-icon>
+                    <p>+1 (512) 542-3600</p>
+                  </address>
                 </div>
                 <div class="hotel__reserve-cta bottom-form">
                   <button
@@ -521,7 +563,6 @@
           </div>
 
           <div class="slider-bg">
-            <!-- start hero -->
             <div class="container">
               <div class="row">
                 <div class="col">
@@ -558,23 +599,6 @@
                         >
                       </li>
                     </ul>
-                    <!-- <a href="#" title="Photos" class="js-link-photos"
-                        >Photos</a>
-                      <a href="#" title="Map" class="js-link-map">Map</a>
-                      <a
-                        rel="nofollow"
-                        href="#"
-                        title="Groups(9+ Rooms)"
-                        class="js-groups-link"
-                        data-destination-page="groupRates"
-                        >Groups (9+ Rooms)</a>
-                        <a
-                        rel="nofollow"
-                        href="#"
-                        title="Weddings"
-                        class="js-groups-link"
-                        data-destination-page="weddings"
-                        >Weddings</a> -->
                   </nav>
 
                   <div class="map-block js-map-block">
@@ -640,9 +664,7 @@
                 </div>
               </div>
             </div>
-            <!-- end hero -->
 
-            <!-- start check in form -->
             <div class="container check-in-form">
               <form
                 class="js-searching"
@@ -2301,7 +2323,6 @@
                 </div>
               </form>
             </div>
-            <!-- end check in form -->
           </div>
         </div>
 
@@ -7602,10 +7623,10 @@
             <h2 class="section-heading">Location</h2>
             <address class="hotel-location__address">
               W Hotel <br />
-              200 Lavaca Street Austin, TX 78701
+              200 Lavaca Street Austin, TX, US 78701<br />
+              +1 (512) 542-3600
             </address>
 
-            <!-- map box -->
             <div class="hotel-map">
               <div class="map-placeholder"></div>
               <button class="hotel-map__button">
@@ -7618,7 +7639,6 @@
                 <span>View Map</span>
               </button>
             </div>
-            <!-- -->
           </div>
         </section>
 
