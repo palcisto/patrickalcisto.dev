@@ -14,11 +14,16 @@
   gap: 0.375rem;
 }
 
+.feather-icon {
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  stroke: currentColor;
+}
+
 .header.navbar .logo {
   padding: 1rem 0;
-}
-.text-warning {
-  display: none;
 }
 
 .phone .feather-phone {
@@ -34,13 +39,26 @@
   font-weight: 700;
 }
 
+.phone__icon:link {
+  background-color: transparent;
+  border: 1px solid var(--primary-color) !important;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+}
+
+.phone__icon .feather-icon {
+  color: var(--primary-color);
+  width: 20px;
+  height: 20px;
+}
+
 .header.navbar .navbar-brand {
   padding: 0;
   margin: 0;
-  /* text-indent: -9999px;
-    background-image: url(../images/room77-logo.png);
-    height: 80px;
-    width: 144px; */
 }
 .navbar-brand h1 {
   font-size: 3.8em;
@@ -166,24 +184,23 @@ a.button:focus {
 .additional-footer a {
   text-decoration: none;
 }
-
 .hotel-rating {
   margin-bottom: 1rem;
 }
-
+.hotel-rating__star {
+  width: 16px;
+  height: 16px;
+}
 .hotel-about {
   margin-bottom: 4.5rem;
   padding-top: 3.5rem;
 }
-
 .nearby-hotels {
   max-width: 100vw;
 }
-
 .nearby-hotels .section-heading {
   margin-bottom: 1.25rem;
 }
-
 .nearby-hotels__list {
   display: grid;
   grid-auto-flow: column;
@@ -226,6 +243,8 @@ a.button:focus {
 
 .nearby-hotel__rating-star {
   display: block;
+  height: 16px;
+  width: 16px;
 }
 
 .section-heading {
@@ -271,6 +290,15 @@ a.button:focus {
   outline: 3px solid var(--primary-color-light) !important;
 }
 
+.top-amenities {
+  margin-bottom: 1.5rem;
+}
+
+.top-amenities img {
+  width: 60%;
+  height: auto;
+}
+
 @media (min-width: 768px) {
   .nearby-hotels__list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -280,10 +308,14 @@ a.button:focus {
 }
 
 @media (max-width: 767px) {
-  .hotel-branding {
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+  .hotel__reserve-cta .button {
+    flex: 1;
+  }
+  .search {
+    padding: 1rem;
+  }
+  .search__input {
+    font-size: 1rem;
   }
   .nearby-hotels__list-wrapper {
     overflow-x: auto;
@@ -294,11 +326,5 @@ a.button:focus {
   }
   .nearby-hotel {
     scroll-snap-align: start;
-  }
-  .search {
-    padding: 1rem;
-  }
-  .search__input {
-    font-size: 1rem;
   }
 }
