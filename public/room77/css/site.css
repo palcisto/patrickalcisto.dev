@@ -885,11 +885,10 @@ button.bg-dark:focus {
   margin-bottom: auto !important;
 }
 @media (min-width: 768px) {
-  
   .my-md-0 {
     margin-top: 0 !important;
   }
-  
+
   .my-md-0 {
     margin-bottom: 0 !important;
   }
@@ -907,7 +906,7 @@ button.bg-dark:focus {
   a:not(.btn) {
     text-decoration: underline;
   }
-  
+
   img {
     page-break-inside: avoid;
   }
@@ -947,7 +946,6 @@ button.bg-dark:focus {
   screen and (device-aspect-ratio: 428/926),
   screen and (device-aspect-ratio: 430/932),
   screen and (device-aspect-ratio: 393/852) {
-  
   input[type='text'],
   input[type='tel'] {
     font-size: 16px !important;
@@ -1222,6 +1220,7 @@ body b.trademark-name sup {
     padding: 0;
   }
 }
+
 .hotel-address {
   align-items: center;
   display: grid;
@@ -3036,7 +3035,7 @@ input.check_date_view {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  
+
   .form-search-hotels .line-row .date-info {
     border-bottom: 1px solid #eaeaee;
   }
