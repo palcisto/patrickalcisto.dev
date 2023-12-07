@@ -1313,40 +1313,10 @@ body b.trademark-name sup {
     padding: 0;
   }
 }
-.hotel-info-block {
-  padding: 3rem 0 2rem;
-}
-.hotel-info-block .hotel-title {
-  margin: 0 0 1.3rem;
-  width: 100%;
-}
-.hotel-info-block .hotel-title .block-info {
-  padding: 0 200px 0 0;
-  width: 100%;
-}
 
 .hotel-info-block .map-nav .wrap-map {
   overflow: hidden;
   height: 246px;
-}
-
-.hotel-info-block .hotel-title h1.hotel-name {
-  font-size: 3.75em;
-  line-height: 1;
-  font-weight: 800;
-  margin-bottom: 0;
-}
-.booking-checkrates-page .hotel-title h1.hotel-name {
-  cursor: pointer;
-  display: inline;
-}
-.hotel-info-block .hotel-title p.stars {
-  margin: 0.3rem 0 0;
-}
-.hotel-info-block .hotel-title p.stars img {
-  height: 15px;
-  width: 15px;
-  min-width: 15px;
 }
 .hotel-address {
   align-items: center;
@@ -1365,14 +1335,6 @@ body b.trademark-name sup {
 }
 .hotel-address p {
   margin: 0;
-}
-.hotel-info-block .bottom-form {
-  position: absolute;
-  right: 0;
-  top: 0.3rem;
-}
-.hotel-info-block .hotel-title p:last-child {
-  margin-bottom: 0;
 }
 .breadcrumb-block {
   margin: -2rem 0 1.25rem;
@@ -1750,12 +1712,6 @@ body b.trademark-name sup {
     width: 28px;
     height: 28px;
   }
-  .hotel-info-block .hotel-title h1.hotel-name {
-    font-size: 3.8em;
-  }
-  .hotel-info-block .hotel-title .block-info {
-    padding: 0 150px 0 0;
-  }
 
   .hotel-rooms .body .room ul.amenities {
     -ms-flex-wrap: wrap !important;
@@ -1784,30 +1740,10 @@ body b.trademark-name sup {
   .hotel-info-block {
     padding: 0;
   }
-  .hotel-info-block .hotel-title {
-    background: #f2f2f2;
-    margin: 0;
-    padding: 1.5rem 0;
-    -ms-flex-wrap: wrap !important;
-    flex-wrap: wrap !important;
-  }
-  .hotel-info-block .hotel-title .block-info {
-    width: 100%;
-    padding: 0;
-  }
-  .hotel-info-block .bg-title-hotel {
-    -ms-flex-wrap: wrap !important;
-    flex-wrap: wrap !important;
-  }
   .hotel-info-block .bottom-form {
     display: flex;
     justify-content: center;
-    position: static;
-    padding-top: 1rem;
     width: 100%;
-  }
-  .hotel-info-block .hotel-title h1.hotel-name {
-    font-size: 3em;
   }
   .hotel-info-block .slider-bg {
     background: #fafafb;
