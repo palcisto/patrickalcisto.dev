@@ -8,7 +8,6 @@
     <link href="css/site.css" rel="stylesheet" />
     <link href="css/custom.css" rel="stylesheet" />
 
-    <link rel="preload" as="image" href="images/w-hotels-logo.webp" />
     <link rel="preload" as="image" href="images/w-hotel-pool.png" />
     <link rel="preload" as="image" href="images/map-246.png" />
 
@@ -20,19 +19,30 @@
     <div class="flex-shrink-0">
       <header class="header navbar navbar-dark bg-dark header-social">
         <div class="container container-1280 d-flex align-content-around">
-          <div class="logo flex-grow-1">
+          <div class="logo">
             <a href="#" class="navbar-brand" title="Room 77">
               <div class="logo-room77">Room 77</div>
               <small>An independent travel network</small>
             </a>
           </div>
+
+          <search class="search">
+            <form class="search__form" action="">
+              <input
+                class="search__input"
+                placeholder="Search..."
+                type="search"
+              />
+            </form>
+          </search>
+
           <div class="menu for-desktop">
             <nav class="my-2 my-md-0 mr-md-3">
-              <a title="Groups (9+ Rooms)" class="js-hl-groups-link" href="#"
-                >Groups (9+ Rooms)</a
-              >
-              <a title="Travel Guides" class="js-hl-guides" href="#"
-                >Travel Guides</a
+              <a
+                title="Groups &amp; Meetings"
+                class="js-hl-groups-link"
+                href="#"
+                >Groups &amp; Meetings</a
               >
               <a title="My Booking" class="js-hl-my-booking" href="#"
                 >My Booking</a
@@ -356,7 +366,7 @@
                   >
                     <use href="images/icons/feather-icons-sprite.svg#phone" />
                   </svg>
-                  Call Now
+                  Call Us
                 </span>
                 <span class="phone__number js-phone-number"
                   >(855) 470-1611</span
@@ -381,20 +391,6 @@
           </div>
         </div>
       </header>
-
-      <div class="subheader">
-        <div class="container">
-          <search class="search">
-            <form class="search__form" action="">
-              <input
-                class="search__input"
-                placeholder="Search..."
-                type="search"
-              />
-            </form>
-          </search>
-        </div>
-      </div>
 
       <main role="main">
         <section class="hotel-info-block">
@@ -496,11 +492,93 @@
                 <div class="col">
                   <div class="hotel__photos">
                     <img
+                      class="hotel__photo-slide"
                       src="images/w-hotel-pool.png"
-                      style="max-width: 100%"
-                      width
+                      width="658"
+                      height="438"
                       alt=""
                     />
+                  </div>
+                  <div class="for-mobile">
+                    <nav class="menu">
+                      <ul class="menu__list">
+                        <li class="menu__list-item">
+                          <a
+                            rel="nofollow"
+                            href="#"
+                            title="Groups &amp; Meetings"
+                            class="js-groups-link"
+                            data-destination-page="groupRates"
+                            >Groups &amp; Meetings</a
+                          >
+                        </li>
+                        <li class="menu__list-item">
+                          <a
+                            rel="nofollow"
+                            href="#"
+                            title="Select a Room"
+                            class="js-groups-link"
+                            >Select a Room</a
+                          >
+                        </li>
+                      </ul>
+                    </nav>
+                    <ul class="top-amenities">
+                      <li class="top-amenities__item">
+                        <span
+                          class="top-amenities__item-icon-wrapper"
+                          aria-hidden="true"
+                        >
+                          <svg
+                            xlmns="http://www.w3.org/2000/svg"
+                            class="icon icon--swimming-person"
+                            height="24"
+                            width="24"
+                          >
+                            <use
+                              href="images/icons/room77-icon-sprite.svg#swimming-person"
+                            ></use>
+                          </svg>
+                        </span>
+                        Number of Pools
+                      </li>
+                      <li class="top-amenities__item">
+                        <span
+                          class="top-amenities__item-icon-wrapper"
+                          aria-hidden="true"
+                        >
+                          <svg
+                            xlmns="http://www.w3.org/2000/svg"
+                            class="icon icon--paw"
+                            height="24"
+                            width="24"
+                          >
+                            <use
+                              href="images/icons/room77-icon-sprite.svg#paw"
+                            ></use>
+                          </svg>
+                        </span>
+                        Pets Allowed
+                      </li>
+                      <li class="top-amenities__item">
+                        <span
+                          class="top-amenities__item-icon-wrapper"
+                          aria-hidden="true"
+                        >
+                          <svg
+                            xlmns="http://www.w3.org/2000/svg"
+                            class="icon icon--fork-knife"
+                            height="24"
+                            width="24"
+                          >
+                            <use
+                              href="images/icons/room77-icon-sprite.svg#fork-knife"
+                            ></use>
+                          </svg>
+                        </span>
+                        Free Breakfast
+                      </li>
+                    </ul>
                   </div>
                 </div>
                 <div class="col map-nav for-desktop for-tablet">
@@ -510,80 +588,104 @@
                         <a
                           rel="nofollow"
                           href="#"
-                          title="Groups(9+ Rooms)"
+                          title="Groups &amp; Meetings"
                           class="js-groups-link"
                           data-destination-page="groupRates"
-                          >Groups (9+ Rooms)</a
+                          >Groups &amp; Meetings</a
                         >
                       </li>
                       <li>
                         <a
                           rel="nofollow"
                           href="#"
-                          title="Weddings"
+                          title="Select a Room"
                           class="js-groups-link"
-                          data-destination-page="weddings"
-                          >Weddings</a
+                          >Select a Room</a
                         >
                       </li>
                     </ul>
                   </nav>
 
-                  <div class="map-block js-map-block">
-                    <section class="map mt-3">
-                      <div class="hotel-map-position js-top-map">
-                        <div class="hotel-map js-map-wrap position-relative">
-                          <div class="hotel-map-img">
-                            <div class="js-hotel-map">
-                              <div
-                                class="js-wrap-map wrap-map"
-                                data-map-width="360"
-                                data-map-height="230"
-                                data-map-zoom="14"
-                                data-map-dinamic-height="true"
-                              >
-                                <img
-                                  class="js-map-img"
-                                  alt="W Hotel Austin"
-                                  src="images/map-246.png"
-                                  height="274"
-                                  width="358"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <button class="hotel-map__button">
-                            <svg
-                              class="hotel-map__button-icon"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <use
-                                href="images/icons/room77-icon-sprite.svg#location"
-                              ></use>
-                            </svg>
-                            <span>View Map</span>
-                          </button>
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                  <div class="text-center pr-book-block">
-                    <div class="top-amenities">
+                  <section class="hotel-map js-map-wrap">
+                    <div class="js-wrap-map hotel-map__wrap">
                       <img
-                        src="images/amenities.webp"
-                        alt="Amenities"
-                        width="387"
-                        height="140"
+                        class="hotel-map__image"
+                        alt="W Hotel Austin"
+                        src="images/map-246.png"
+                        height="274"
+                        width="358"
                       />
                     </div>
-                    <p class="bottom">
-                      <button
-                        class="button button--rounded js-link-stay js-mp-lp-checkrates-bt"
+
+                    <button class="hotel-map__button">
+                      <svg
+                        class="hotel-map__button-icon"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        CHECK RATES
-                      </button>
-                    </p>
-                  </div>
+                        <use
+                          href="images/icons/room77-icon-sprite.svg#location"
+                        ></use>
+                      </svg>
+                      <span>View Map</span>
+                    </button>
+                  </section>
+
+                  <ul class="top-amenities">
+                    <li class="top-amenities__item">
+                      <span
+                        class="top-amenities__item-icon-wrapper"
+                        aria-hidden="true"
+                      >
+                        <svg
+                          xlmns="http://www.w3.org/2000/svg"
+                          class="icon icon--swimming-person"
+                          height="24"
+                          width="24"
+                        >
+                          <use
+                            href="images/icons/room77-icon-sprite.svg#swimming-person"
+                          ></use>
+                        </svg>
+                      </span>
+                      Number of Pools
+                    </li>
+                    <li class="top-amenities__item">
+                      <span
+                        class="top-amenities__item-icon-wrapper"
+                        aria-hidden="true"
+                      >
+                        <svg
+                          xlmns="http://www.w3.org/2000/svg"
+                          class="icon icon--paw"
+                          height="24"
+                          width="24"
+                        >
+                          <use
+                            href="images/icons/room77-icon-sprite.svg#paw"
+                          ></use>
+                        </svg>
+                      </span>
+                      Pets Allowed
+                    </li>
+                    <li class="top-amenities__item">
+                      <span
+                        class="top-amenities__item-icon-wrapper"
+                        aria-hidden="true"
+                      >
+                        <svg
+                          xlmns="http://www.w3.org/2000/svg"
+                          class="icon icon--fork-knife"
+                          height="24"
+                          width="24"
+                        >
+                          <use
+                            href="images/icons/room77-icon-sprite.svg#fork-knife"
+                          ></use>
+                        </svg>
+                      </span>
+                      Free Breakfast
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -959,7 +1061,7 @@
 
                     <div class="search-button col d-flex align-content">
                       <button type="submit" class="btn btn-warning">
-                        Find Rooms
+                        Search
                       </button>
                     </div>
 
@@ -2256,65 +2358,12 @@
           method="GET"
           autocomplete="off"
         >
-          <div
-            class="modal fade js-modal-cancellation-details modal-cancellation-details"
-            tabindex="-1"
-            role="dialog"
-          >
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h2>Free Cancellation</h2>
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="cancellation-modal-body">
-                  <div>
-                    <p class="cancellation-modal-cancel-before"></p>
-                  </div>
-                  <div>
-                    <p class="cancellation-modal-body-policy"></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="for-mobile d-flex menu-nav">
-            <div class="container">
-              <nav>
-                <a href="#" title="Map" class="js-link-map">Map</a
-                ><a
-                  rel="nofollow"
-                  href="#"
-                  title="Groups(9+ Rooms)"
-                  class="js-groups-link"
-                  data-destination-page="groupRates"
-                  >Groups (9+ Rooms)</a
-                ><a
-                  rel="nofollow"
-                  href="#"
-                  title="Weddings"
-                  class="js-groups-link"
-                  data-destination-page="weddings"
-                  >Weddings</a
-                >
-              </nav>
-            </div>
-          </div>
-
           <div class="bg-light-gray body-hotel">
             <div class="login-form-click no-code for-mobile">
               <div class="bg d-flex justify-content-center align-items-center">
                 <a
                   title="Log in"
-                  data-modalform="js-modal-login-form"
-                  class="d-flex justify-content-center align-items-center js-show-modal-loginform"
+                  class="d-flex justify-content-center align-items-center"
                   href="#"
                 >
                   <span class="img">
@@ -2330,7 +2379,7 @@
                     </svg>
                   </span>
                   <span>
-                    Log in to <strong> save up to $25</strong><br />on today's
+                    Log in to <strong> save up to $25</strong> on today's
                     booking
                   </span>
                 </a>
@@ -3053,7 +3102,7 @@
 
                           <div class="search-button col d-flex align-content">
                             <button type="submit" class="btn btn-warning">
-                              Find Rooms
+                              Search
                             </button>
                           </div>
 
@@ -4370,8 +4419,7 @@
                     >
                       <a
                         title="Log in"
-                        data-modalform="js-modal-login-form"
-                        class="d-flex justify-content-center align-items-center js-show-modal-loginform"
+                        class="d-flex justify-content-center align-items-center"
                         href="#"
                       >
                         <span class="img">
@@ -4387,8 +4435,8 @@
                           </svg>
                         </span>
                         <span
-                          >Log in to <strong> save up to $25</strong><br />
-                          on today's booking</span
+                          >Log in to <strong> save up to $25</strong> on today's
+                          booking</span
                         >
                       </a>
                     </div>
@@ -4447,7 +4495,7 @@
                                 />
                                 <strong>Best value!</strong>
                               </p>
-                              <p class="type-room">1 King Bed with Sofabed</p>
+                              <p class="type-room">1 King Bed with Sofa bed</p>
                             </div>
                             <div
                               class="col info d-flex align-items-center for-mobile-small-big"
