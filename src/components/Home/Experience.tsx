@@ -82,13 +82,13 @@ export const Work = (props: WorkProps) => {
 
   return (
     <article className="work p-12 rounded-xl border-0 border-accent border-solid">
-      <picture className="">
+      <picture className="work__branding">
         <img
           className="work__logo mb-8"
           src={src}
           height={height}
           width={width}
-          alt={props.company}
+          alt={company}
         />
       </picture>
       <h4 className="text-3xl text-primary mb-4">{props.title}</h4>

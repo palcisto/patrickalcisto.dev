@@ -195,6 +195,11 @@ header > nav {
   );
 }
 
+.work * {
+  position: relative;
+  z-index: 1;
+}
+
 .work::before {
   content: '';
   display: inline-block;
@@ -211,4 +216,18 @@ header > nav {
   top: 0;
   right: 50%;
   transform: translate(50%, -52%);
+}
+
+.work__branding {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work__logo {
+  width: auto;
+  max-width: 80%;
+  height: auto;
+  max-height: 100%;
 }
