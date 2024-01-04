@@ -1,5 +1,22 @@
 ---
+import '../style/styles.css';
 import Layout from '../components/Layout.astro';
 ---
 
-<Layout title="Patrick A. Alcisto: Senior UI Developer">Hello</Layout>
+<Layout title="Patrick A. Alcisto: Senior UI Developer">
+  <header class="flex justify-center items-center h-[327px]">
+    <h1>hello!</h1>
+  </header>
+  <main class="flex justify-center pt-8">
+    <p>
+      I'm <span>Patrick <span class="hidden">Alcisto</span></span>.<br />A <span
+        ><span>UI Developer</span><span class="hidden">Frontend Developer</span
+        >.<br />A <span>mountain biker</span><span class="hidden"
+          >R/C Car Enthusiast</span
+        ></span
+      ><br /> A <span>dad to three rad dogs</span><span class="hidden"
+        >boyfriend to an awesome woman</span
+      >!
+    </p>
+  </main>
+</Layout>
