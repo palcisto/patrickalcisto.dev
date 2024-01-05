@@ -1,4 +1,5 @@
 ---
+import '../style/styles.css';
 import GithubIcon from '../components/icons/Github.astro';
 import CautionIcon from '../components/icons/Caution.astro';
 
@@ -23,7 +24,7 @@ const currentYear = new Date(Date.now()).getFullYear();
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <title>{title}</title>
   </head>
-  <body>
+  <body class="bg-light-black text-neutral-200">
     <slot />
 
     <footer class="flex flex-col items-center">
@@ -46,96 +47,104 @@ const currentYear = new Date(Date.now()).getFullYear();
         </li>
       </ul>
 
-      <p>&copy;{currentYear} Patrick A. Alcisto</p>
+      <p class="text-lg mt-16">&copy;{currentYear} Patrick A. Alcisto</p>
     </footer>
   </body>
 </html>
 
 <style is:global>
-  /* CSS HEX */
-  --grape: #642ca9ff;
-  --pale-dogwood: #f4d6ccff;
-  --hunyadi-yellow: #f4b860ff;
-  --bittersweet-shimmer: #c83e4dff;
-  --teal: #1f7a8cff;
+  :root {
+    /* CSS HEX */
+    --grape: #642ca9ff;
+    --pale-dogwood: #f4d6ccff;
+    --hunyadi-yellow: #f4b860ff;
+    --bittersweet-shimmer: #c83e4dff;
+    --teal: #1f7a8cff;
 
-  /* CSS HSL */
-  --grape: hsla(267, 59%, 42%, 1);
-  --pale-dogwood: hsla(15, 65%, 88%, 1);
-  --hunyadi-yellow: hsla(36, 87%, 67%, 1);
-  --bittersweet-shimmer: hsla(353, 56%, 51%, 1);
-  --teal: hsla(190, 64%, 34%, 1);
+    /* CSS HSL */
+    --grape: hsla(267, 59%, 42%, 1);
+    --pale-dogwood: hsla(15, 65%, 88%, 1);
+    --hunyadi-yellow: hsla(36, 87%, 67%, 1);
+    --bittersweet-shimmer: hsla(353, 56%, 51%, 1);
+    --teal: hsla(190, 64%, 34%, 1);
+    --light-black: hsl(0 0% 15% / 1);
+    --light-black-base: 0 0% 15%;
+    --crimson: hsl(3 82% 51% / 1);
+    --crimson-base: 3 82% 51%;
+    --zest: hsl(28 82% 51% / 1);
+    --zest-base: 28 82% 51%;
 
-  /* SCSS Gradient */
-  --gradient-top: linear-gradient(
-    0deg,
-    #642ca9ff,
-    #f4d6ccff,
-    #f4b860ff,
-    #c83e4dff,
-    #1f7a8cff
-  );
-  --gradient-right: linear-gradient(
-    90deg,
-    #642ca9ff,
-    #f4d6ccff,
-    #f4b860ff,
-    #c83e4dff,
-    #1f7a8cff
-  );
-  --gradient-bottom: linear-gradient(
-    180deg,
-    #642ca9ff,
-    #f4d6ccff,
-    #f4b860ff,
-    #c83e4dff,
-    #1f7a8cff
-  );
-  --gradient-left: linear-gradient(
-    270deg,
-    #642ca9ff,
-    #f4d6ccff,
-    #f4b860ff,
-    #c83e4dff,
-    #1f7a8cff
-  );
-  --gradient-top-right: linear-gradient(
-    45deg,
-    #642ca9ff,
-    #f4d6ccff,
-    #f4b860ff,
-    #c83e4dff,
-    #1f7a8cff
-  );
-  --gradient-bottom-right: linear-gradient(
-    135deg,
-    #642ca9ff,
-    #f4d6ccff,
-    #f4b860ff,
-    #c83e4dff,
-    #1f7a8cff
-  );
-  --gradient-top-left: linear-gradient(
-    225deg,
-    #642ca9ff,
-    #f4d6ccff,
-    #f4b860ff,
-    #c83e4dff,
-    #1f7a8cff
-  );
-  --gradient-bottom-left: linear-gradient(
-    315deg,
-    #642ca9ff,
-    #f4d6ccff,
-    #f4b860ff,
-    #c83e4dff,
-    #1f7a8cff
-  );
-  --gradient-radial: radial-gradient(
-    #642ca9ff,
-    #f4d6ccff,
-    #f4b860ff,
-    #c83e4dff,
-    #1f7a8cff
-  );
+    /* CSS Gradient */
+    --gradient-top: linear-gradient(
+      0deg,
+      #642ca9ff,
+      #f4d6ccff,
+      #f4b860ff,
+      #c83e4dff,
+      #1f7a8cff
+    );
+    --gradient-right: linear-gradient(
+      90deg,
+      #642ca9ff,
+      #f4d6ccff,
+      #f4b860ff,
+      #c83e4dff,
+      #1f7a8cff
+    );
+    --gradient-bottom: linear-gradient(
+      180deg,
+      #642ca9ff,
+      #f4d6ccff,
+      #f4b860ff,
+      #c83e4dff,
+      #1f7a8cff
+    );
+    --gradient-left: linear-gradient(
+      270deg,
+      #642ca9ff,
+      #f4d6ccff,
+      #f4b860ff,
+      #c83e4dff,
+      #1f7a8cff
+    );
+    --gradient-top-right: linear-gradient(
+      45deg,
+      #642ca9ff,
+      #f4d6ccff,
+      #f4b860ff,
+      #c83e4dff,
+      #1f7a8cff
+    );
+    --gradient-bottom-right: linear-gradient(
+      135deg,
+      #642ca9ff,
+      #f4d6ccff,
+      #f4b860ff,
+      #c83e4dff,
+      #1f7a8cff
+    );
+    --gradient-top-left: linear-gradient(
+      225deg,
+      #642ca9ff,
+      #f4d6ccff,
+      #f4b860ff,
+      #c83e4dff,
+      #1f7a8cff
+    );
+    --gradient-bottom-left: linear-gradient(
+      315deg,
+      #642ca9ff,
+      #f4d6ccff,
+      #f4b860ff,
+      #c83e4dff,
+      #1f7a8cff
+    );
+    --gradient-radial: radial-gradient(
+      #642ca9ff,
+      #f4d6ccff,
+      #f4b860ff,
+      #c83e4dff,
+      #1f7a8cff
+    );
+  }
 </style>
