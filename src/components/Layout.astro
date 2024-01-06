@@ -1,7 +1,11 @@
 ---
 import '../style/styles.css';
+import github from '@/images/icons/github-light-logo.png';
+import linkedin from '@/images/icons/linkedin-light-logo.png';
+import codepen from '@/images/icons/codepen-light-logo.png';
 import GithubIcon from '../components/icons/Github.astro';
-import CautionIcon from '../components/icons/Caution.astro';
+import G2i from '../components/icons/G2i.astro';
+import { Image } from 'astro:assets';
 
 export interface Props {
   title: string;
@@ -27,26 +31,36 @@ const currentYear = new Date(Date.now()).getFullYear();
   <body class="bg-light-black text-neutral-200">
     <slot />
 
-    <footer class="flex flex-col items-center">
+    <footer class="flex flex-col items-center bg-sherpa-blue mt-12 pb-12">
       <div class="mountains h-[169px]"></div>
-      <ul id="socials" class="flex gap-x-10 mt-6">
+      <ul id="socials" class="flex gap-x-10 mt-6 list-none">
         <li>
-          <a href="https://github.com/palcisto" class="text-accent">Github</a>
+          <a href="https://github.com/palcisto">
+            <Image src={github} alt="Github" width="64" height="64" />
+            <span class="sr-only">Github</span>
+          </a>
         </li>
         <li>
-          <a
-            href="https://www.linkedin.com/in/patrickalcisto/"
-            class="text-accent">LinkedIn</a
-          >
+          <a href="https://www.linkedin.com/in/patrickalcisto/">
+            <Image src={linkedin} alt="LinkedIn" width="64" height="64" />
+            <span class="sr-only">LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://codepen.io/palcisto">
+            <Image src={codepen} alt="Codepen" width="64" height="64" />
+            <span class="sr-only">Codepen</span>
+          </a>
         </li>
         <li>
           <a
             href="https://portal.g2i.co/developer/Patrick-Alcisto/22c9f395-29f8-4820-b737-1e83dfce07a0"
-            class="text-accent">G2i</a
           >
+            <G2i classes="h-16 w-16" />
+            <span class="sr-only">G2i</span>
+          </a>
         </li>
       </ul>
-
       <p class="text-lg mt-16">&copy;{currentYear} Patrick A. Alcisto</p>
     </footer>
   </body>
@@ -69,10 +83,12 @@ const currentYear = new Date(Date.now()).getFullYear();
     --teal: hsla(190, 64%, 34%, 1);
     --light-black: hsl(0 0% 15% / 1);
     --light-black-base: 0 0% 15%;
-    --crimson: hsl(3 82% 51% / 1);
     --crimson-base: 3 82% 51%;
-    --zest: hsl(28 82% 51% / 1);
+    --crimson: hsl(3 82% 51% / 1);
     --zest-base: 28 82% 51%;
+    --zest: hsl(28 82% 51% / 1);
+    --sherpa-blue-base: 185 98% 18%;
+    --sherpa-blue: hsl(185 98% 18% / 1);
 
     /* CSS Gradient */
     --gradient-top: linear-gradient(

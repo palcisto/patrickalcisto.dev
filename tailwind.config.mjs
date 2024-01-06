@@ -11,6 +11,7 @@ export default {
         'light-black': 'hsl(var(--light-black-base) / <alpha-value>)',
         crimson: 'hsl(var(--crimson-base) / <alpha-value>)',
         zest: 'hsl(var(--zest-base) / <alpha-value>)',
+        'sherpa-blue': 'hsl(var(--sherpa-blue-base) / <alpha-value>)',
       },
       fontFamily: {
         title: '"Config Rounded", sans-serif',
