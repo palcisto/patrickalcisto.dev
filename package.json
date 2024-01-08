@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "cypress:open": "cypress open"
   },
   "devDependencies": {
     "@types/luxon": "^3.3.5",
