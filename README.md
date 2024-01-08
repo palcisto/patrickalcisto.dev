@@ -23,6 +23,21 @@ Here's a list of a few things I'm trying out:
 - Improving/sharpening my design skills
   <br /><br />
 
+## Stack
+
+The motivation for this stack is based around performance in an effort to deliver an excellent user experience for visitors of this site. A second motivation of learning new things impacted my decision-making with some of the tech, such as Astro and TailwindCSS.
+
+I had never used Astro prior to his project and had heard and read great things that intrigued me. So far I'm REALLY enjoying it -- so easy to get started and all of the integrations make many things a breeze! As for TailwindCSS, I have used it on a couple of prior projects but never really felt like I had as solid of a grasp of tool as I'd like to have. So this project was mostly an exercise of practice and becoming more deeply familiar with it's various concepts and conventions.
+
+Furthermore, my performance based decisions include the utilization of `woff2` fonts due to their improved compression over `woff` and it's great [browser support](https://caniuse.com/?search=woff2). The images have been optimized using [TinyPNG](https://tinypng.com/) (yes... I know Astro has image optimization built-in, but I've used TinyPNG for years and it's my go-to/habitual choice when I need to quickly optimize a few images, plus I figured I'd save the time of learning Astro's image optimization for another North Carolina rainy day of which there are many). [SVGOMG](https://svgomg.net/) handles all SVG optimization duties.
+
+- Astro
+- React
+- TailwindCSS
+- Netlify
+
+Big thanks to [@ladddesign](https://twitter.com/ladddesign) for the beautiful font, [Config Rounded](https://en.bestfonts.pro/font/config-rounded).
+
 ---
 
 [![Netlify + Astro](https://user-images.githubusercontent.com/43764894/223559085-8ff69d2f-4247-427f-a3a6-d2036b00082a.png)](https://ntl.fyi/3LZGn73)

@@ -1,17 +1,33 @@
 ---
-import '../style/styles.css';
 import Layout from '../components/Layout.astro';
-import { Home } from '../components';
-import { Image } from 'astro:assets';
-import profilePhoto from '../images/profile_photo_lg.jpg';
 ---
 
 <Layout title="Patrick A. Alcisto: Senior UI Developer">
-  <Home>
-    <Image
-      src={profilePhoto}
-      alt="Patrick A. Alcisto"
-      class="shadow-2xl rounded-tr-xl rounded-bl-xl border border-accent border-solid"
-    />
-  </Home>
+  <header class="flex justify-center items-center">
+    <h1 class="font-title text-7xl font-normal">hello!</h1>
+  </header>
+  <main class="flex justify-center pt-8 bg-light-black">
+    <p class="font-body font-light text-2xl/normal">
+      I'm <span class="text-crimson font-normal italic"
+        >Patrick<span class="hidden"> Alcisto</span></span
+      >.<br />A <span
+        ><span class="text-zest">UI Developer</span><span class="hidden"
+          >Frontend Developer</span
+        >.<br />A <span class="text-zest">mountain biker</span><span
+          class="hidden">R/C Car Enthusiast</span
+        ></span
+      >.<br /> A <span class="text-zest">dad to three rad dogs</span><span
+        class="hidden">boyfriend to an awesome woman</span
+      >!
+    </p>
+  </main>
 </Layout>
+
+<style>
+  header {
+    background-image: url('./images/hero-polygon.png');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+</style>
