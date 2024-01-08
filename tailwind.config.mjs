@@ -18,9 +18,6 @@ export default {
         body: '"Config Rounded", sans-serif',
         smallText: '"Config Rounded Text", "Config Rounded" sans-serif',
       },
-      dropShadow: {
-        titles: '2px 2px 6px var(--accent-color)',
-      },
     },
   },
   plugins: [],
