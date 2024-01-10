@@ -1,10 +1,6 @@
 ---
 import '../style/styles.css';
-import github from '@/images/github-light-logo.png';
-import linkedin from '@/images/linkedIn-light-logo.png';
-import codepen from '@/images/codepen-light-logo.png';
-import G2i from '@/components/icons/G2i.astro';
-import { Image } from 'astro:assets';
+import Footer from './Footer.astro';
 
 export interface Props {
   title: string;
@@ -15,7 +11,7 @@ const currentYear = new Date(Date.now()).getFullYear();
 ---
 
 <!doctype html>
-<html lang="en" class="bg-sherpa-blue">
+<html lang="en" class="bg-[var(--sherpa-blue-dark)]">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -27,61 +23,17 @@ const currentYear = new Date(Date.now()).getFullYear();
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <title>{title}</title>
   </head>
-  <body class="grid grid-rows-[1fr] text-neutral-200">
+  <body class="grid grid-rows-[1fr] text-neutral-200 min-h-screen">
     <div class="grid page-wrapper-grid bg-light-black">
       <slot />
 
-      <footer
-        class="flex flex-col items-center bg-sherpa-blue mt-12 pb-12 px-6"
-      >
-        <div class="mountains h-[169px]"></div>
-        <ul
-          id="socials"
-          class="grid grid-cols-[repeat(4,_64px)] w-full max-w-[345px] mt-6 list-none justify-between"
-        >
-          <li>
-            <a href="https://github.com/palcisto">
-              <Image src={github} alt="Github" width="64" height="64" />
-              <span class="sr-only">Github</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/patrickalcisto/">
-              <Image src={linkedin} alt="LinkedIn" width="64" height="64" />
-              <span class="sr-only">LinkedIn</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://codepen.io/palcisto">
-              <Image src={codepen} alt="Codepen" width="64" height="64" />
-              <span class="sr-only">Codepen</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://portal.g2i.co/developer/Patrick-Alcisto/22c9f395-29f8-4820-b737-1e83dfce07a0"
-            >
-              <G2i classes="aspect-square h-auto w-full max-w-16" />
-              <span class="sr-only">G2i</span>
-            </a>
-          </li>
-        </ul>
-        <p class="text-lg mt-16">&copy;{currentYear} Patrick A. Alcisto</p>
-      </footer>
+      <Footer currentYear={currentYear} />
     </div>
   </body>
 </html>
 
 <style is:global>
   :root {
-    /* CSS HEX */
-    --grape: #642ca9ff;
-    --pale-dogwood: #f4d6ccff;
-    --hunyadi-yellow: #f4b860ff;
-    --bittersweet-shimmer: #c83e4dff;
-    --teal: #1f7a8cff;
-
-    /* CSS HSL */
     --grape: hsla(267, 59%, 42%, 1);
     --pale-dogwood: hsla(15, 65%, 88%, 1);
     --hunyadi-yellow: hsla(36, 87%, 67%, 1);
@@ -95,9 +47,10 @@ const currentYear = new Date(Date.now()).getFullYear();
     --zest: hsl(28 82% 51% / 1);
     --sherpa-blue-base: 185 98% 18%;
     --sherpa-blue: hsl(185 98% 18% / 1);
+    --sherpa-blue-dark: hsl(185 98% 10% / 1);
   }
 
   .page-wrapper-grid {
-    grid-template-rows: 327px minmax(220px, 1fr) 400px;
+    grid-template-rows: 327px auto 1fr;
   }
 </style>

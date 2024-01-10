@@ -1,0 +1,127 @@
+---
+import github from '@/images/github-light-logo.png';
+import linkedin from '@/images/linkedIn-light-logo.png';
+import codepen from '@/images/codepen-light-logo.png';
+import G2i from '@/components/icons/G2i.astro';
+import { Image } from 'astro:assets';
+
+export interface Props {
+  currentYear: number;
+}
+
+const { currentYear } = Astro.props as Props;
+---
+
+<footer class="footer mt-12">
+  <div class="left-terrain"></div>
+  <div class="mountain-terrain">
+    <div class="mountain-base"></div>
+  </div>
+  <div class="right-terrain"></div>
+  <div class="footer-content flex flex-col items-center">
+    <ul
+      id="socials"
+      class="grid grid-cols-[repeat(4,_64px)] w-full max-w-[345px] mt-6 list-none justify-between"
+    >
+      <li>
+        <a href="https://github.com/palcisto">
+          <Image src={github} alt="Github" width="64" height="64" />
+          <span class="sr-only">Github</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/patrickalcisto/">
+          <Image src={linkedin} alt="LinkedIn" width="64" height="64" />
+          <span class="sr-only">LinkedIn</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://codepen.io/palcisto">
+          <Image src={codepen} alt="Codepen" width="64" height="64" />
+          <span class="sr-only">Codepen</span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://portal.g2i.co/developer/Patrick-Alcisto/22c9f395-29f8-4820-b737-1e83dfce07a0"
+        >
+          <G2i classes="aspect-square h-auto w-full max-w-16" />
+          <span class="sr-only">G2i</span>
+        </a>
+      </li>
+    </ul>
+    <p class="text-lg mt-16">&copy;{currentYear} Patrick A. Alcisto</p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    display: grid;
+    --content-max-width: 1728px;
+    grid-template-columns:
+      [full-width-start] minmax(0, 1fr)
+      [content-start] min(100%, var(--content-max-width)) [content-end]
+      minmax(0, 1fr) [full-width-end];
+    grid-template-rows: 135px auto;
+  }
+
+  .left-terrain {
+    /* Not sure why the main gradient size has to be taller than the others */
+    background:
+      repeat-x 0 0 / 1px 43px
+        linear-gradient(to bottom, transparent 32px, #b6b6b6 32px 43px),
+      no-repeat 0 43px / 100% 961px
+        linear-gradient(
+          to bottom,
+          var(--sherpa-blue),
+          var(--sherpa-blue-dark) 100%
+        );
+    grid-column: full-width-start / content-start;
+    grid-row: 1 / span 2;
+  }
+
+  .mountain-terrain {
+    background-image: url('/images/mountains.svg');
+    background-repeat: no-repeat;
+    background-size: 1728px 135px;
+    background-position: center;
+    grid-column: content;
+    height: 135px;
+    padding-top: 43px;
+  }
+
+  .mountain-base {
+    background-image: linear-gradient(
+      to bottom,
+      var(--sherpa-blue) 0,
+      var(--sherpa-blue-dark) 100%
+    );
+    background-size: 1728px 851px;
+    height: 100%;
+    mask-image: url('/images/mountain-base-mask.svg');
+    mask-position: center top;
+    mask-repeat: no-repeat;
+    mask-size: 1728px 129px;
+  }
+
+  .right-terrain {
+    background-image: linear-gradient(
+      to bottom,
+      var(--sherpa-blue) -92px,
+      var(--sherpa-blue-dark) 100%
+    );
+    background-size: 100% 851px;
+    grid-column: content-end / full-width-end;
+    grid-row: 2;
+  }
+
+  .footer-content {
+    background-image: linear-gradient(
+      to bottom,
+      var(--sherpa-blue) -92px,
+      var(--sherpa-blue-dark) 100%
+    );
+    background-size: 100% 851px;
+    grid-column: content;
+  }
+</style>
