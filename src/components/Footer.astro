@@ -12,7 +12,7 @@ export interface Props {
 const { currentYear } = Astro.props as Props;
 ---
 
-<footer class="footer mt-12">
+<footer class="grid">
   <div class="left-terrain"></div>
   <div class="mountain-terrain">
     <div class="mountain-base"></div>
@@ -55,9 +55,7 @@ const { currentYear } = Astro.props as Props;
 </footer>
 
 <style>
-  .footer {
-    display: grid;
-    --content-max-width: 1728px;
+  footer {
     grid-template-columns:
       [full-width-start] minmax(0, 1fr)
       [content-start] min(100%, var(--content-max-width)) [content-end]

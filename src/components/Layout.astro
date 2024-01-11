@@ -24,7 +24,9 @@ const currentYear = new Date(Date.now()).getFullYear();
     <title>{title}</title>
   </head>
   <body class="grid grid-rows-[1fr] text-neutral-200 min-h-screen">
-    <div class="grid page-wrapper-grid bg-light-black">
+    <div
+      class="grid grid-rows-[333px_auto_1fr] gap-2 md:gap-8 xl:gap-12 bg-light-black"
+    >
       <slot />
 
       <Footer currentYear={currentYear} />
@@ -48,9 +50,7 @@ const currentYear = new Date(Date.now()).getFullYear();
     --sherpa-blue-base: 185 98% 18%;
     --sherpa-blue: hsl(185 98% 18% / 1);
     --sherpa-blue-dark: hsl(185 98% 10% / 1);
-  }
 
-  .page-wrapper-grid {
-    grid-template-rows: 327px auto 1fr;
+    --content-max-width: 1728px;
   }
 </style>
