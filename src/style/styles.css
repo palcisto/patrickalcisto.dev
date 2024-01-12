@@ -1,21 +1,50 @@
-@font-face {
-  font-family: 'Config Rounded';
-  src: url('fonts/ConfigRounded/ConfigRoundedRegular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Config Rounded';
-  src: url('fonts/ConfigRounded/ConfigRoundedLight.woff2') format('woff2');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Config Rounded';
-  src: url('fonts/ConfigRounded/ConfigRoundedItalic.woff2') format('woff2');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Config Rounded';
+    font-display: block; /* This property will help us not flash unstyled text for a couple hundred milliseconds, and then it would act like font-display: swap */
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/ConfigRounded/ConfigRoundedRegular.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Config Rounded';
+    font-display: block;
+    font-style: normal;
+    font-weight: 300;
+    src: url('fonts/ConfigRounded/ConfigRoundedLight.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Config Rounded';
+    font-display: block;
+    font-style: italic;
+    font-weight: 400;
+    src: url('fonts/ConfigRounded/ConfigRoundedItalic.woff2') format('woff2');
+  }
+
+  :root {
+    --grape: hsla(267, 59%, 42%, 1);
+    --pale-dogwood: hsla(15, 65%, 88%, 1);
+    --hunyadi-yellow: hsla(36, 87%, 67%, 1);
+    --bittersweet-shimmer: hsla(353, 56%, 51%, 1);
+    --teal: hsla(190, 64%, 34%, 1);
+    --light-black: hsl(0 0% 15% / 1);
+    --light-black-base: 0 0% 15%;
+    --crimson-base: 3 82% 51%;
+    --crimson: hsl(3 82% 51% / 1);
+    --zest-base: 28 82% 51%;
+    --zest: hsl(28 82% 51% / 1);
+    --sherpa-blue-base: 185 98% 18%;
+    --sherpa-blue: hsl(185 98% 18% / 1);
+    --sherpa-blue-dark: hsl(185 98% 10% / 1);
+
+    --content-max-width: 1728px;
+  }
+
+  body {
+    font-family: 'Config Rounded', sans-serif;
+  }
 }

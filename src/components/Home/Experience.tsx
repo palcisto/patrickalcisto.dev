@@ -34,7 +34,7 @@ export interface ExperienceProps {}
 export default function Experience(props: ExperienceProps) {
   return (
     <section id="experience">
-      <h2 className="text-lg text-center md:text-4xl font-title mb-12 drop-shadow-titles">
+      <h2 className="text-lg text-center md:text-4xl mb-12 drop-shadow-titles">
         Work
       </h2>
       <div className="grid grid-cols-2 3xl:grid-cols-3 gap-16 max-w">

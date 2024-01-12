@@ -14,13 +14,36 @@ const currentYear = new Date(Date.now()).getFullYear();
 <html lang="en" class="bg-[var(--sherpa-blue-dark)]">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Patrick A. Alcisto" />
     <meta
       name="description"
       content="Senior UI Developer passionate about crafting excellent user experiences on the web and mobile."
     />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <link
+      rel="preload"
+      href="/fonts/ConfigRoundedRegular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/ConfigRoundedLight.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/ConfigRoundedItalic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="preload" href="/images/hero-polygon.webp" as="image" />
     <title>{title}</title>
   </head>
   <body class="grid grid-rows-[1fr] text-neutral-200 min-h-screen">
@@ -33,24 +56,3 @@ const currentYear = new Date(Date.now()).getFullYear();
     </div>
   </body>
 </html>
-
-<style is:global>
-  :root {
-    --grape: hsla(267, 59%, 42%, 1);
-    --pale-dogwood: hsla(15, 65%, 88%, 1);
-    --hunyadi-yellow: hsla(36, 87%, 67%, 1);
-    --bittersweet-shimmer: hsla(353, 56%, 51%, 1);
-    --teal: hsla(190, 64%, 34%, 1);
-    --light-black: hsl(0 0% 15% / 1);
-    --light-black-base: 0 0% 15%;
-    --crimson-base: 3 82% 51%;
-    --crimson: hsl(3 82% 51% / 1);
-    --zest-base: 28 82% 51%;
-    --zest: hsl(28 82% 51% / 1);
-    --sherpa-blue-base: 185 98% 18%;
-    --sherpa-blue: hsl(185 98% 18% / 1);
-    --sherpa-blue-dark: hsl(185 98% 10% / 1);
-
-    --content-max-width: 1728px;
-  }
-</style>

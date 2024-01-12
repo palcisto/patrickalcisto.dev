@@ -14,9 +14,7 @@ export default {
         'sherpa-blue': 'hsl(var(--sherpa-blue-base) / <alpha-value>)',
       },
       fontFamily: {
-        title: '"Config Rounded", sans-serif',
-        body: '"Config Rounded", sans-serif',
-        smallText: '"Config Rounded Text", "Config Rounded" sans-serif',
+        configrounded: '"Config Rounded", sans-serif',
       },
     },
   },

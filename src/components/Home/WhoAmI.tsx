@@ -6,7 +6,7 @@ export default function WhoAmI(props: WhoAmIProps) {
   return (
     <section id="who-am-i" className="flex flex-col gap-24 mb-48 px-8 md:px-56">
       <div className="text-center md:text-right">
-        <h2 className="text-3xl md:text-4xl font-title mb-12 drop-shadow-titles">
+        <h2 className="text-3xl md:text-4xl mb-12 drop-shadow-titles">
           Who Am I?
         </h2>
         <p className="text-lg font-light">
@@ -23,7 +23,7 @@ export default function WhoAmI(props: WhoAmIProps) {
       </div>
 
       <div className="text-center md:text-left">
-        <h2 className="text-3xl md:text-4xl font-title mb-12 drop-shadow-titles">
+        <h2 className="text-3xl md:text-4xl mb-12 drop-shadow-titles">
           What Do I Do?
         </h2>
         <p className="text-lg font-light">
@@ -36,7 +36,7 @@ export default function WhoAmI(props: WhoAmIProps) {
       </div>
 
       <div>
-        <h3 className="text-2xl md:text-4xl font-title mb-12 drop-shadow-titles">
+        <h3 className="text-2xl md:text-4xl mb-12 drop-shadow-titles">
           Things I'm experimenting with
         </h3>
         <ul>
