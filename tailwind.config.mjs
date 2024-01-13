@@ -16,6 +16,9 @@ export default {
       fontFamily: {
         configrounded: '"Config Rounded", sans-serif',
       },
+      screens: {
+        xs: '375px',
+      },
     },
   },
   plugins: [],

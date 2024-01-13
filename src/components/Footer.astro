@@ -17,10 +17,10 @@ const { currentYear } = Astro.props as Props;
     <div class="mountain-base"></div>
   </div>
   <div class="right-terrain"></div>
-  <div class="footer-content flex flex-col items-center pb-8">
+  <div class="footer-content flex flex-col items-center pb-8 px-4 xs:px-8">
     <ul
       id="socials"
-      class="grid grid-cols-[repeat(4,_64px)] w-full max-w-[345px] mt-6 list-none justify-between"
+      class="grid grid-cols-[repeat(4,_56px)] xs:grid-cols-[repeat(4,_64px)] w-full max-w-[345px] mt-6 list-none justify-between"
     >
       <li>
         <a target="_blank" href="https://github.com/palcisto">
@@ -56,15 +56,32 @@ const { currentYear } = Astro.props as Props;
 
 <style>
   footer {
+    /* These values are 70% of the natural size of the mountains and gradient */
+    --mountain-width: 1210px;
+    --mountain-height: 95px;
+    --mountain-base-height: 90px;
+    --mountain-top-padding: 30px;
+    --gradient-height: 596px;
     grid-template-columns:
       [full-width-start] minmax(0, 1fr)
       [content-start] min(100%, var(--content-max-width)) [content-end]
       minmax(0, 1fr) [full-width-end];
-    grid-template-rows: 135px auto;
+    grid-template-rows: var(--mountain-height) auto;
+  }
+
+  @media (min-width: 375px) {
+    footer {
+      /* These values are for the natural size of the mountains and gradient */
+      --mountain-width: 1728px;
+      --mountain-height: 135px;
+      --mountain-base-height: 129px;
+      --mountain-top-padding: 43px;
+      --gradient-height: 851px;
+    }
   }
 
   .left-terrain {
-    /* Not sure why the main gradient size has to be taller than the others */
+    /* Not sure why the main gradient bg size has to be taller than the others */
     background:
       repeat-x 0 0 / 1px 43px
         linear-gradient(to bottom, transparent 32px, #b6b6b6 32px 43px),
@@ -81,11 +98,11 @@ const { currentYear } = Astro.props as Props;
   .mountain-terrain {
     background-image: url('/images/mountains.svg');
     background-repeat: no-repeat;
-    background-size: 1728px 135px;
+    background-size: var(--mountain-width) var(--mountain-height);
     background-position: center;
     grid-column: content;
-    height: 135px;
-    padding-top: 43px;
+    height: var(--mountain-height);
+    padding-top: var(--mountain-top-padding);
   }
 
   .mountain-base {
@@ -94,12 +111,12 @@ const { currentYear } = Astro.props as Props;
       var(--sherpa-blue) 0,
       var(--sherpa-blue-dark) 100%
     );
-    background-size: 1728px 851px;
+    background-size: var(--mountain-width) var(--gradient-height);
     height: 100%;
     mask-image: url('/images/mountain-base-mask.svg');
     mask-position: center top;
     mask-repeat: no-repeat;
-    mask-size: 1728px 129px;
+    mask-size: var(--mountain-width) var(--mountain-base-height);
   }
 
   .right-terrain {
@@ -119,7 +136,7 @@ const { currentYear } = Astro.props as Props;
       var(--sherpa-blue) -92px,
       var(--sherpa-blue-dark) 100%
     );
-    background-size: 100% 851px;
+    background-size: var(--mountain-width) var(--gradient-height);
     grid-column: content;
   }
 </style>
