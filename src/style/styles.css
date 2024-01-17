@@ -31,15 +31,15 @@
     --hunyadi-yellow: hsla(36, 87%, 67%, 1);
     --bittersweet-shimmer: hsla(353, 56%, 51%, 1);
     --teal: hsla(190, 64%, 34%, 1);
-    --light-black: hsl(0 0% 15% / 1);
+    --light-black: hsl(0, 0%, 15%);
     --light-black-base: 0 0% 15%;
     --crimson-base: 3 82% 51%;
-    --crimson: hsl(3 82% 51% / 1);
+    --crimson: hsl(3, 82%, 51%);
     --zest-base: 28 82% 51%;
-    --zest: hsl(28 82% 51% / 1);
+    --zest: hsl(28, 82%, 51%);
     --sherpa-blue-base: 185 98% 18%;
-    --sherpa-blue: hsl(185 98% 18% / 1);
-    --sherpa-blue-dark: hsl(185 98% 10% / 1);
+    --sherpa-blue: hsl(185, 98%, 18%);
+    --sherpa-blue-dark: hsl(185, 98%, 10%);
 
     --content-max-width: 1728px;
   }
