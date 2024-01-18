@@ -8,21 +8,21 @@
     font-display: block; /* This property will help us not flash unstyled text for a couple hundred milliseconds, and then it would act like font-display: swap */
     font-style: normal;
     font-weight: 400;
-    src: url('fonts/ConfigRounded/ConfigRoundedRegular.woff2') format('woff2');
+    src: url('/fonts/ConfigRounded/ConfigRoundedRegular.woff2') format('woff2');
   }
   @font-face {
     font-family: 'Config Rounded';
     font-display: block;
     font-style: normal;
     font-weight: 300;
-    src: url('fonts/ConfigRounded/ConfigRoundedLight.woff2') format('woff2');
+    src: url('/fonts/ConfigRounded/ConfigRoundedLight.woff2') format('woff2');
   }
   @font-face {
     font-family: 'Config Rounded';
     font-display: block;
     font-style: italic;
     font-weight: 400;
-    src: url('fonts/ConfigRounded/ConfigRoundedItalic.woff2') format('woff2');
+    src: url('/fonts/ConfigRounded/ConfigRoundedItalic.woff2') format('woff2');
   }
 
   :root {
