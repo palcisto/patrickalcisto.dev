@@ -41,10 +41,83 @@
     --sherpa-blue: hsl(185, 98%, 18%);
     --sherpa-blue-dark: hsl(185, 98%, 10%);
 
+    --color-github: #24292f;
+    --color-linkedin: #0a66c2;
+    --color-g2i: #e51700;
+    --color-instagram-bottom: #b102f3;
+
     --content-max-width: 1728px;
+
+    --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-duration: 0.5s;
   }
 
   body {
     font-family: 'Config Rounded', sans-serif;
+  }
+
+  .octicon,
+  .linkedin,
+  .g2i,
+  .instagram__initial,
+  :where(.octicon, .linkedin, .g2i) circle {
+    transition-property: fill;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing);
+  }
+
+  :where(.octicon, .linkedin, .g2i) circle {
+    fill: transparent;
+  }
+
+  :where(.octicon, .linkedin, .g2i):hover circle {
+    fill: #fff;
+  }
+
+  .instagram__bottom,
+  .instagram__middle,
+  .instagram__top {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing);
+  }
+
+  .octicon,
+  .linkedin,
+  .g2i,
+  .instagram__initial {
+    fill: #fff;
+  }
+
+  .instagram__bottom {
+    fill: var(--color-instagram-bottom);
+  }
+
+  .instagram__middle {
+    fill: url(#igrgmiddle);
+  }
+
+  .instagram__top {
+    fill: url(#igrgtop);
+  }
+
+  .instagram:hover
+    :where(.instagram__bottom, .instagram__middle, .instagram__top) {
+    opacity: 1;
+  }
+  .instagram:hover .instagram__initial {
+    fill: transparent;
+  }
+  .octicon:hover {
+    fill: var(--color-github);
+  }
+
+  .linkedin:hover {
+    fill: var(--color-linkedin);
+  }
+
+  .g2i:hover {
+    fill: var(--color-g2i);
   }
 }
