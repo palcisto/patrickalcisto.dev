@@ -1,17 +1,52 @@
 ---
-import '../style/styles.css';
 import Layout from '../components/Layout.astro';
-import { Home } from '../components';
-import { Image } from 'astro:assets';
-import profilePhoto from '../images/profile_photo_lg.jpg';
 ---
 
-<Layout title="Patrick A. Alcisto: Senior UI Developer">
-  <Home>
-    <Image
-      src={profilePhoto}
-      alt="Patrick A. Alcisto"
-      class="shadow-2xl rounded-tr-xl rounded-bl-xl border border-accent border-solid"
-    />
-  </Home>
+<Layout
+  title="Patrick A. Alcisto: UI Developer, Mountain Biker, Dog Dad"
+  description="Senior UI Developer passionate about crafting excellent user experiences on the web and mobile."
+>
+  <header class="grid bg-[length:1210px_233px] xs:bg-auto">
+    <div class="header-left"></div>
+    <div class="header-content flex justify-center items-center">
+      <h1 class="text-7xl font-normal">hello!</h1>
+    </div>
+    <div class="header-right"></div>
+  </header>
+  <main class="flex w-[min(90%,320px)] justify-self-center bg-light-black">
+    <p class="font-light text-xl/normal xs:text-2xl/normal tracking-wider">
+      I'm <span class="text-crimson font-normal italic">Patrick Alcisto</span
+      >.<br />A <span
+        ><span class="text-zest">UI Developer</span><span class="hidden"
+          >Frontend Developer</span
+        >.<br />A <span class="text-zest">mountain biker</span><span
+          class="hidden">R/C Car Enthusiast</span
+        ></span
+      >.<br /> A <span class="text-zest">dad to three rad dogs</span><span
+        class="hidden">boyfriend to an awesome woman</span
+      >!
+    </p>
+  </main>
 </Layout>
+
+<style>
+  header {
+    background-image: url('/images/hero-polygon.webp');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    grid-template-columns:
+      minmax(0, 1fr)
+      min(100%, var(--content-max-width))
+      minmax(0, 1fr);
+  }
+
+  .header-left {
+    background: no-repeat 0 0 / 100% 332px
+      linear-gradient(180deg, hsl(9 87% 54%), hsl(5 83% 53%));
+  }
+
+  .header-right {
+    background: no-repeat 0 0 / 100% 246px
+      linear-gradient(180deg, hsl(13.8 83.11% 55.88%), hsl(14.69 85.22% 54.9%));
+  }
+</style>

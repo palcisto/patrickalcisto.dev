@@ -8,15 +8,16 @@ export default {
         accent: 'hsl(var(--accent-color-base) / <alpha-value>)',
         text: 'hsl(var(--text-color-base) / <alpha-value>)',
         title: 'hsl(var(--title-color-base) / <alpha-value>)',
-        'eerie-black': 'hsl(var(--eerie-black-base) / <alpha-value>)',
-        'dark-purple': 'hsl(var(--dark-purple-base) / <alpha-value>)',
+        'light-black': 'hsl(var(--light-black-base) / <alpha-value>)',
+        crimson: 'hsl(var(--crimson-base) / <alpha-value>)',
+        zest: 'hsl(var(--zest-base) / <alpha-value>)',
+        'sherpa-blue': 'hsl(var(--sherpa-blue-base) / <alpha-value>)',
       },
       fontFamily: {
-        title: '"Orbitron", sans-serif',
-        body: '"Roboto", sans-serif',
+        configrounded: '"Config Rounded", sans-serif',
       },
-      dropShadow: {
-        titles: '2px 2px 6px var(--accent-color)',
+      screens: {
+        xs: '375px',
       },
     },
   },
